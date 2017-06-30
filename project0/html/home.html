@@ -1,3 +1,4 @@
+
 <!--
 
 20170424 Allegro
@@ -7,60 +8,64 @@
 	2.自适应浏览器大小
 	3.增加字体样式
 
+20170630  
+	加了图片，结合bootstrap完成自适应，字体就这样吧……稍微好看点。
+	电脑打开时，中间层背景不透明，手机模拟的时候会透明。
+	
 -->
-
-<!DOCTYPE html>
-<html >
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>顾客登录</title>
+<meta charset="utf-8">
+<link href="jquery-mobile/jquery.mobile.theme-1.3.0.min.css" rel="stylesheet" type="text/css">
+<link href="jquery-mobile/jquery.mobile.structure-1.3.0.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+<link href="css.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery-1.11.1.min.js"></script>
+<script src="jquery-mobile/jquery.mobile-1.3.0.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
+<title>顾客登录</title>
   
   <style type="text/css">
-  .wrapper {
-  margin-top: 240px;
-  margin-bottom: 240px;
+ .wrapper {
+  margin-top: 40%;
+  margin-bottom:40%;
+
 }
 
 .form-1 {
-  max-width: 1000px;
-  padding: 60px 140px 180px;
+  max-width: 60%;
   margin: 0 auto;
-  background-color: #E0E0E0;
-  border: 1px solid rgba(0, 0, 0, 0);
 }
 .form-1 .form-2 {
   position: relative;
-  font-size: 42px;
   height: auto;
-  padding: 36px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  font-size: 28px;
+  
 }
 
 </style>
-  
+
 </head>
 
-<body bgcolor="#E0E0E0">
 
-    <div class="wrapper" align="center">
+<body>
+
+    <div  class="wrapper" align="center">
     
-    <form class="form-1" > 
+    <form  class="form-1" align="center" action="home.php"> 
     <br>
-    <img src=" " width="450" height="450" />
+	  <img src="images/timg.jpg" width="238" height="215" />
       <h1>一起用餐吧</h1>
-      <br/><br/> <br/>
-      <input  class="form-2" type="text" name="desknumber" placeholder="请输入桌号" />      
-     <br><br>
-      <button class="form-2" type="submit">开始点餐</button>   
+      <br/><br/>
+      <input  class="form-2" type="number" min="1" max="300" name="desknumber" placeholder="请输入桌号" />      
+     <br>
+      <button  class="form-2" type="submit">开始点餐</button>   
     </form>
   </div>
-  
-<address>
-<br />
-Software Engineering, Group 9 <br />
-</address>
+
  
 </body>
 </html>
