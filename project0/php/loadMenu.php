@@ -11,13 +11,14 @@
 
 	$dom=simplexml_load_file("../xml/menu.xml");
 	
+	$i=0;
 	//右侧的菜单显示
 		foreach($dom->category as $category)
 	{
-		
+		$i++;
 		$ctgid=$category->attributes();
 		print("			<li class='ui-border-t'>
-				<a name='c13'>".$ctgid[1]."</a>
+				<a name='c".$i."'>".$ctgid[1]."</a>
 			</li>");
 		foreach($category->dish as $dish)
 		{

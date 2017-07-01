@@ -17,7 +17,7 @@
 		$i++;
 		$ctgid=$category->attributes();
 		print("<li/>");
-		print("<a href='menu.html#C".$i."' target='iframe_menu'>");
+		print("<a href='menu.php#c".$i."' target='iframe_menu'>");
 		print($ctgid[1]);
 		print("</a></li>");
 	}

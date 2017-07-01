@@ -3,6 +3,97 @@
 	contributor: Patrick Zhang
   -->
 <menu>
+	<category id="main course" cname="主菜">
+		<dish id="Griddle Cooked Tea Tree Mushrooms">
+			<Cname>干锅茶树菇</Cname>
+			<Ename>Griddle Cooked Tea Tree Mushrooms</Ename>
+			<price>55</price>
+			<picture>../pictures/GriddleCookedTeaTreeMushrooms.jpg</picture>
+			<description>
+			</description>
+		</dish>
+		<dish id="Shredded Pork with Vegetables">
+			<Cname>农家小炒肉</Cname>
+			<Ename>Shredded Pork with Vegetables</Ename>
+			<price>25</price>
+			<picture>../pictures/ShreddedPorkwithVegetables.jpg</picture>
+			<description>
+			</description>
+		</dish>
+		<dish id="Stir fried egg with sponge gourd">
+			<Cname>剁椒丝瓜炒鸡蛋</Cname>
+			<Ename>Stir fried egg with sponge gourd</Ename>
+			<price>35</price>
+			<picture>../pictures/Stirfriedeggwithspongegourd.jpg</picture>
+			<description>
+			</description>
+		</dish>
+		<dish id="Chop bell pepper fish head">
+			<Cname>剁椒鱼头</Cname>
+			<Ename>Chop bell pepper fish head</Ename>
+			<price>25</price>
+			<picture>../pictures/Chopbellpepperfishhead.jpg</picture>
+			<description>
+			</description>
+		</dish>
+		<dish id="Grandma food">
+			<Cname>外婆菜</Cname>
+			<Ename>Grandma food</Ename>
+			<price>24.6</price>
+			<picture>../pictures/Grandmafood.jpg</picture>
+			<description>
+			</description>
+		</dish>
+	</category>
+	<category id="seafood" cname="海鲜">
+		<dish id="boilShrimp">
+			<Cname>白灼虾</Cname>
+			<Ename>boil shrimp</Ename>
+			<price>65</price>
+			<picture>pictures/boilShrimp.jpg</picture>
+			<description>
+				白灼虾是广东省广州地区的一道地方传统名菜。
+				主要食材是虾，主要烹饪工艺是白灼，“白灼”二字指的是将原滋原味的鲜虾直接放进清水里煮食。
+				广州人喜欢用白灼之法来做虾，为的是保持其鲜、甜、嫩的原味，然后将虾剥壳蘸酱汁而食。
+			</description>
+		</dish>
+		<dish id="abalone">
+			<Cname>鲍鱼</Cname>
+			<Ename>abalone</Ename>
+			<price>0.5</price>
+			<picture>pictures/abalone.jpg</picture>
+			<description>
+			鲍鱼是名贵的“海珍品”之一，味道鲜美，营养丰富，被誉为海洋“软黄金”。
+			鲍鱼是名贵的海洋食用贝类，被誉为“餐桌黄金，海珍之冠”，其肉质细嫩、营养丰富，
+			鲜品可食部分蛋白质24%、脂肪0.44%;干品含蛋白质40%、糖元33.7%、脂肪0.9%以及多种维生素和微量元素，
+			足一种对人体非常有利的高蛋白、低脂肪食物。鲍鱼因富含谷氨酸，味道非常鲜美。
+			</description>
+		</dish>
+		<dish id="steamed scallop with garlic vermicelli">
+			<Cname>蒜蓉粉丝蒸扇贝</Cname>
+			<Ename>steamed scallop with garlic vermicelli</Ename>
+			<price>57.2</price>
+			<picture>pictures/scallop.jpg</picture>
+			<description>
+			</description>
+		</dish>
+		<dish id="garlic crayfish">
+			<Cname>蒜蓉小龙虾</Cname>
+			<Ename>garlic crayfish</Ename>
+			<price>76</price>
+			<picture>pictures/crayfish.jpg</picture>
+			<description>
+			</description>
+		</dish>
+		<dish id="salmon">
+			<Cname>三文鱼片</Cname>
+			<Ename>salmon</Ename>
+			<price>26</price>
+			<picture>pictures/salmon.jpg</picture>
+			<description>
+			</description>
+		</dish>
+	</category>
 	<category id="dessert" cname="甜点">
 		<dish id="moonCake">
 			<Cname>月饼</Cname>
@@ -16,29 +107,36 @@
 			月饼可以软化血管，防止动脉硬化，提高免疫力。
 			</description>
 		</dish>
-	</category>
-	<category id="seafood" cname="海鲜">
-		<dish id="boilShrimp">
-			<Cname>白灼虾</Cname>
-			<Ename>boil shrimp</Ename>
-			<price>65</price>
-			<picture>../pictures/boilShrimp.jpg</picture>
+		<dish id="Macaron">
+			<Cname>马卡龙</Cname>
+			<Ename>Macaron</Ename>
+			<price>25</price>
+			<picture>../pictures/Macaron.jpg</picture>
 			<description>
-				白灼虾是广东省广州地区的一道地方传统名菜。
-				主要食材是虾，主要烹饪工艺是白灼，“白灼”二字指的是将原滋原味的鲜虾直接放进清水里煮食。
-				广州人喜欢用白灼之法来做虾，为的是保持其鲜、甜、嫩的原味，然后将虾剥壳蘸酱汁而食。
 			</description>
 		</dish>
-		<dish id="abalone">
-			<Cname>鲍鱼</Cname>
-			<Ename>abalone</Ename>
-			<price>0.5</price>
-			<picture>../pictures/abalone.jpg</picture>
+		<dish id="strawberry icecream">
+			<Cname>草莓冰激凌</Cname>
+			<Ename>strawberry icecream</Ename>
+			<price>35</price>
+			<picture>../pictures/strawberryicecream.jpg</picture>
 			<description>
-			鲍鱼是名贵的“海珍品”之一，味道鲜美，营养丰富，被誉为海洋“软黄金”。
-			鲍鱼是名贵的海洋食用贝类，被誉为“餐桌黄金，海珍之冠”，其肉质细嫩、营养丰富，
-			鲜品可食部分蛋白质24%、脂肪0.44%;干品含蛋白质40%、糖元33.7%、脂肪0.9%以及多种维生素和微量元素，
-			足一种对人体非常有利的高蛋白、低脂肪食物。鲍鱼因富含谷氨酸，味道非常鲜美。
+			</description>
+		</dish>
+		<dish id="stratiform cake">
+			<Cname>榴莲千层蛋糕</Cname>
+			<Ename>stratiform cake</Ename>
+			<price>25</price>
+			<picture>../pictures/stratiformcake.jpg</picture>
+			<description>
+			</description>
+		</dish>
+		<dish id="Tiramisu">
+			<Cname>提拉米苏</Cname>
+			<Ename>Tiramisu</Ename>
+			<price>35</price>
+			<picture>../pictures/Tiramisu.jpg</picture>
+			<description>
 			</description>
 		</dish>
 	</category>
