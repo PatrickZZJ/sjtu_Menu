@@ -3,24 +3,28 @@
 	contributor: Patrick Zhang
   -->
 <menu>
-	<dish id="moonCake">
-		<Cname>月饼</Cname>
-		<Ename>mooncake</Ename>
-		<category>dessert</category>
-		<price>15</price>
-		<picture>../pictures/moonCake.jpg</picture>
-		<description>			月饼内馅多采用植物性原料种子，如核桃仁、杏仁、芝麻仁、瓜子、山楂、莲蓉、红小豆、枣泥等，对人体有一定的保健作用。			植物性的种子含不饱和脂肪酸高，以油酸、亚油酸居多，对软化血管防止动脉硬化有益；			含矿物质，有利于提高免疫力，预防儿童锌缺乏、缺铁贫血；莲子、红小豆、芝麻含钾很高，置换细胞内钠盐排出，营养心肌、调节血压；			从中医角度看，一些原料性温平居多，强心、镇静、安神，一些种子富含维生素E，抗衰老，滋皮肤、乌须发。			月饼可以软化血管，防止动脉硬化，提高免疫力。		</description>
-	</dish>
-	<dish id="boilShrimp">
-		<Cname>白灼虾</Cname>
-		<Ename>boil shrimp</Ename>
-		<category>seafood</category>
-		<price>65</price>
-		<picture>../pictures/boilShrimp.jpg</picture>
-		<description>
-			白灼虾是广东省广州地区的一道地方传统名菜。
-			主要食材是虾，主要烹饪工艺是白灼，“白灼”二字指的是将原滋原味的鲜虾直接放进清水里煮食。
-			广州人喜欢用白灼之法来做虾，为的是保持其鲜、甜、嫩的原味，然后将虾剥壳蘸酱汁而食。
-		</description>
-	</dish>
+	<category id="dessert">
+		<dish id="moonCake">
+			<Cname>月饼</Cname>
+			<Ename>mooncake</Ename>
+			<price>15</price>
+			<picture>../pictures/moonCake.jpg</picture>
+			<description>月饼内馅多采用植物性原料种子，如核桃仁、杏仁、芝麻仁、瓜子、山楂、莲蓉、红小豆、枣泥等，对人体有一定的保健作用。
+						植物性的种子含不饱和脂肪酸高，以油酸、亚油酸居多，对软化血管防止动脉硬化有益；
+						含矿物质，有利于提高免疫力，预防儿童锌缺乏、缺铁贫血；莲子、红小豆、芝麻含钾很高，置换细胞内钠盐排出，营养心肌、调节血压；			从中医角度看，一些原料性温平居多，强心、镇静、安神，一些种子富含维生素E，抗衰老，滋皮肤、乌须发。			月饼可以软化血管，防止动脉硬化，提高免疫力。		</description>
+		</dish>
+	</category>
+	<category id="seafood">
+		<dish id="boilShrimp">
+			<Cname>白灼虾</Cname>
+			<Ename>boil shrimp</Ename>
+			<price>65</price>
+			<picture>../pictures/boilShrimp.jpg</picture>
+			<description>
+				白灼虾是广东省广州地区的一道地方传统名菜。
+				主要食材是虾，主要烹饪工艺是白灼，“白灼”二字指的是将原滋原味的鲜虾直接放进清水里煮食。
+				广州人喜欢用白灼之法来做虾，为的是保持其鲜、甜、嫩的原味，然后将虾剥壳蘸酱汁而食。
+			</description>
+		</dish>
+	</category>
 </menu>
