@@ -41,7 +41,7 @@
 		
 <section class="ui-container ui-center">
 
-			<iframe src="menu.html" name="iframe_menu">1</iframe>
+			<iframe src="menu.php" name="iframe_menu">1</iframe>
 			<div class="menu-class">    
 			  <ul >    
 			  <?php include('../php/loadCategory.php')?>
