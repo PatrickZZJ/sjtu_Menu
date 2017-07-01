@@ -15,23 +15,15 @@
 <body style="background-color: bisque">
 		<br/><br/>
 		<div id="login">
-	<form action="<?= $_SERVER["PHP_SELF"] ?>" method="post" class="form-horizontal">
-		<span class="heading"><h1 class="text-center">用户登录</h1></span>
-			
+	<form action="staffLogInPage.php" method="post" class="form-horizontal">
+			<span class="heading"><h1 class="text-center">用户登录</h1></span>
 			<div class="form-group" style="text-align: center">
-		<?php if (isset($_POST["user"])): ?>
 		<input name="user" type="text" placeholder="用户名">
-		<?php elseif (isset($_COOKIE["user"])): ?>
-		<input name="user" type="text" value="<?= htmlspecialchars($_COOKIE["user"]) ?>" placeholder="用户名" >
-		<?php else: ?>
-        <input name="user" type="text" value="" placeholder="用户名">
-        <?php endif ?>	
-		
 			<div class="form-group" style="text-align: center">
 		<input name="pass" type="password" placeholder="密　码">
 			</div>
 			<div style="text-align: center">
-		<input type="submit" value="登陆" class="btn btn-default" style="margin:0 auto">
+		<input type="submit" value="登录" class="btn btn-default" style="margin:0 auto">
 			<br/>
 			</div>
 	</form>

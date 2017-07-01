@@ -1,5 +1,9 @@
 <?php 
-session_start();
+	session_start();
+	if(	(isset($_SESSION["Mauthenticated"])) || (isset($_SESSION["Cauthenticated"]))  )
+	{}
+	else header("Location:staffLogInPage.php");
+  
 ?>
 
 <!doctype html>
