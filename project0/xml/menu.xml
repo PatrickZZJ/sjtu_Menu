@@ -3,7 +3,7 @@
 	contributor: Patrick Zhang
   -->
 <menu>
-	<category id="dessert">
+	<category id="dessert" cname="Ìðµã">
 		<dish id="moonCake">
 			<Cname>ÔÂ±ý</Cname>
 			<Ename>mooncake</Ename>
@@ -17,7 +17,7 @@
 			</description>
 		</dish>
 	</category>
-	<category id="seafood">
+	<category id="seafood" cname="º£ÏÊ">
 		<dish id="boilShrimp">
 			<Cname>°××ÆÏº</Cname>
 			<Ename>boil shrimp</Ename>

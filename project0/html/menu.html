@@ -1,26 +1,66 @@
 <!DOCTYPE html>
+<!--
+
+20170701
+用于选菜界面的菜单条目。
+
+-->
+
 <html>
     <head>
-        <title>Select dishes</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+         <link rel="stylesheet" href="css\demo.css">                           <!-- 自己写-->
+         <link rel="stylesheet" href="css\frozen.css">
+		 <title>菜单</title>
     </head>
 
 	<body>  
-			<h1><a name="1">dish 1</a></h1>
-			<p>1111111111111111
-			</p>
+		<ul class="ui-list ui-border-tb">
+			<li class="ui-border-t">
+			<ul class="ui-tiled">
+				<div class="ui-list-thumb">
+				<span style="background-image:url(pictures/moonCake.jpg)"></span>
+				</div>
+
+				<li style="padding:15px 0">
+				<h4>高尔夫</h4>
+				<h4>2.3M</h4>
+				</li>
+				
+				<li>
+				<button class="ui-btn-wrap ui-btn-s" onclick="" >+</button>
+				<h3> 0 </h3>
+				<button class="ui-btn-wrap ui-btn-s">-</button>
+				</li>
+				</ul>
+	
+			</li>
 			
-			<br />
+			<li class="ui-border-t">
+			<ul class="ui-tiled">
+				<div class="ui-list-thumb">
+				<span style="background-image:url(pictures/moonCake.jpg)"></span>
+				</div>
+
+				<li style="padding:15px 0">
+				<h4>高尔夫</h4>
+				<h4>2.3M</h4>
+				</li>
+				
+				<li>
+				<button class="ui-btn-wrap ui-btn-s" onclick="" >+</button>
+				<h3> 0 </h3>
+				<button class="ui-btn-wrap ui-btn-s">-</button>
+				</li>
+			</ul>
+			</li>
 			
-			<h1><a name="2">dish 2</a></h1>
-			<p>22222222222222
-			</p>
-			
-			<br />
-			
-			<h1><a name="3">dish 3</a></h1>
-			<p>33333333333333333333
-			</p>
-			
+			</ul>
+				
 			
 	</body>  
 </html>
+
+
