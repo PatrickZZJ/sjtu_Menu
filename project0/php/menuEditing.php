@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
     /**
      * menuEditing.php
      *
@@ -6,7 +6,7 @@
      *
      * Patrick Z
      * https://github.com/PatrickZZJ/sjtu_Menu
-	 * unfinished: identity check;language compatibility issues£»picture showing;picture loading;sql injection prevention;
+	 * unfinished: identity check;language compatibility issuesï¼›picture showing;picture loading;sql injection prevention;
      */
 
     // enable sessions
@@ -31,7 +31,7 @@
 		echo $dom->asXML('xml/menu.xml');
 		Header('Location:'.URL.'');
 		}
-	
+	header("Content-type: text/html; charset=utf-8");
 ?>
 
 
@@ -46,26 +46,28 @@
     <br/>
 	<?php if(!isset($_POST["submission"])){?>
 		<form action="<?= $_SERVER["PHP_SELF"] ?>" method="post">
-			<b><?php //print("ÖÐÎÄÃû£º")?>Chinese Name:</b>
+			<b><?php 
+header("Content-type: text/html; charset=utf-8");print("ä¸­æ–‡åï¼š")?>Chinese Name:</b>
 			<input name="Cname" value="<?=$dish[0]->Cname?>"/>
 			<br/>
-			<b><?php //print("Ó¢ÎÄÃû£º")?>English Name:</b>
+			<b><?php //print("è‹±æ–‡åï¼š")?>English Name:</b>
 			<input name="Ename" value="<?=$dish[0]->Ename?>"/>
 			<br/>
-			<b><?php //print("·ÖÀà£º")?>Category:</b>
+			<b><?php //print("åˆ†ç±»ï¼š")?>Category:</b>
 			<input name="category" value="<?=$dish[0]->category?>"/>
 			<br/>
-			<b><?php //print("¼Û¸ñ£º")?>Price:</b>
+			<b><?php //print("ä»·æ ¼ï¼š")?>Price:</b>
 			<input name="price" value="<?=$dish[0]->price?>"/>
 			<br/>
-			<b><?php //print("Í¼Æ¬£º")?>Picture:</b>
+			<b><?php //print("å›¾ç‰‡ï¼š")?>Picture:</b>
 			<input name="picture" value="<?=$dish[0]->picture?>"/>
 			<br/>
-			<b><?php //print("ÃèÊö£º")?>Description:</b>
+			<b><?php //print("æè¿°ï¼š")?>Description:</b>
 			<input name="description" value="<?=$dish[0]->description?>"/>
 			<br/>
 			<input type="submit" value="submit"/>
 			<input type="hidden" name="submission" value="true"/>
+			<img src="<?=$dish[0]->picture?>" />
 		</form>
 	<?php }?>
   </body>
