@@ -22,7 +22,7 @@
 
     </head>
 
-	<body>  
+	<body style="overflow:hidden">  
 			   <header class="ui-header ui-header-positive ui-border-b">
 					<i class="ui-icon-return" onclick="history.back()"></i><h1> 商家名称：一起点餐吧 </h1>
 	
@@ -46,7 +46,7 @@
 			  <ul >    
 			  <?php include('../php/loadCategory.php')?>
 			  </ul>    
-			</div>  
+			</div>			
 </section>
 	</body>  
 </html>

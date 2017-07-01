@@ -20,8 +20,10 @@
 		<ul class="ui-list ui-border-tb">
 		<?php include('../php/loadMenu.php')?>
 		</ul>
-				
-			
+		</br>		
+					<br />
+				<h5 style="text-align:center">没有了:(</h5>
+				<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />	
 	</body>  
 </html>
 
