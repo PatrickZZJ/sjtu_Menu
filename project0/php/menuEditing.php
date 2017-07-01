@@ -6,7 +6,7 @@
      *
      * Patrick Z
      * https://github.com/PatrickZZJ/sjtu_Menu
-	 * unfinished: identity check;language compatibility issues；picture showing;picture loading;sql injection prevention;
+	 * unfinished: identity check;
      */
 
     // enable sessions
@@ -46,8 +46,7 @@
     <br/>
 	<?php if(!isset($_POST["submission"])){?>
 		<form action="<?= $_SERVER["PHP_SELF"] ?>" method="post">
-			<b><?php 
-header("Content-type: text/html; charset=utf-8");print("中文名：")?>Chinese Name:</b>
+			<b><?php print("中文名：")?>Chinese Name:</b>
 			<input name="Cname" value="<?=$dish[0]->Cname?>"/>
 			<br/>
 			<b><?php //print("英文名：")?>English Name:</b>
