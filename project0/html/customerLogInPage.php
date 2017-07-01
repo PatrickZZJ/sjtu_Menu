@@ -2,6 +2,7 @@
 顾客登陆页面
 -->
 <?php include('../php/customerLogIn.php')?>
+
 <!DOCTYPE html>
 <html >
 <head>
@@ -13,7 +14,7 @@
 <link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
 <link href="css.css" rel="stylesheet" type="text/css">
 <script src="jquery-mobile/jquery-1.11.1.min.js"></script>
-<script src="jquery-mobile/jquery.mobile-1.3.0.min.js"></script>
+<!--<script src="jquery-mobile/jquery.mobile-1.3.0.min.js"></script>-->
 <script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
 <title>顾客登录</title>
   
@@ -30,16 +31,16 @@
 <body>
 
 <div style="text-align: center" data-role="page" id="page">
-		<form class="form-1"> 
+		<form class="form-1" action="customerLogInPage.php" > 
 		<img src="images/timg.jpg" width="238" height="215" alt=""/>
 		<h1>一起用餐吧</h1>
 		<div data-role="fieldcontain">
 			<input  class="form-2" type="number" min="1" max="300" name="desknumber" placeholder="请输入桌号" />      
 		</div>
-		<button type="submit">开始点餐</button>   
+		<a href="selectPage.php"><button type="submit">开始点餐</button></a>   
     </form>
   </div>
-  
+
 <address>
 <br />
 Software Engineering, Group 9 <br />
