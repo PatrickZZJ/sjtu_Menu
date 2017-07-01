@@ -34,7 +34,15 @@
 		<footer class="ui-footer  ui-footer-btn ui-btn-group">
 			<ul class="ui-tiled ui-border-t">
 				<li><h1>桌号<?php print($_SESSION['desknumber'])?></h1></li>
-				<li><h1>￥xx.xx</h1></li>
+				<li><h1>
+					<?php 
+						if(!isset($_SESSION['total']))
+							$total='0';
+						else
+							$total=$_SESSION['total'];
+						print "￥".$total;
+					?>
+				</h1></li>
 				<li><button class="ui-btn-lg ui-btn-danger" onclick="location.href='order-check.html'"><h2 style="color:white">下单<h2></button></a></li>
 				</ul>
 		</footer>

@@ -10,6 +10,7 @@
      */
 
 	$dom=simplexml_load_file("../xml/menu.xml");
+	$orders=simplexml_load_file("../xml/order.xml");
 	
 	$i=0;
 	//右侧的菜单显示
@@ -34,9 +35,27 @@
 				</li>
 				
 				<li>
-				<button class='ui-btn-wrap ui-btn-s' onclick='' >+</button>
-				<h3> 0 </h3>
-				<button class='ui-btn-wrap ui-btn-s'>-</button>
+				<form action='../php/addDish.php' method='get'>
+					<button class='ui-btn-wrap ui-btn-s' type='submit'>+</button>
+				</form>
+				<h3>");
+			$dishId=$dish->attributes();
+			$dishIdSet=$dishId['id'];
+			
+			foreach($orders->order->dish as $orderDish)
+			{
+				$orderDishId=$orderDish->attributes();
+				$orderDishIdSet=$orderDishId['id'];
+				if($orderDishIdSet == "{$dishIdSet}")
+				{
+					$num=$orders->order->dish->num;
+					print $num;
+				}
+			}
+			print("</h3>
+				<form action='../php/addDish.php' method='get'>
+					<button class='ui-btn-wrap ui-btn-s' type='submit'>-</button>
+				</form>
 				</li>
 			</ul>");
 		}
