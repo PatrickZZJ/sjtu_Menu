@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!--In this xml file stores the data of orders
+  -->
+<orders>
+	<order id="1">
+		<desknumber>1</desknumber>
+		<dish id="mooncake">
+			<price>15</price>
+			<num>1</num>
+		</dish>
+		<total>15</total>
+		<handled>no<handled>
+	</order> 	
+</orders>
