@@ -16,20 +16,22 @@
         {
             // remember that user's logged in
             $_SESSION["Mauthenticated"] = true;
+			$_SESSION["staff"]=$_POST["user"];
 
             $host = $_SERVER["HTTP_HOST"];
             $path = rtrim(dirname($_SERVER["PHP_SELF"]), "/\\");
-            header('Location:kitchen.html');
+            header('Location:kitchen.php');
             exit;
         }
 		if (($_POST["user"] == CUSER && $_POST["pass"] == CPASS))
         {
             // remember that user's logged in
             $_SESSION["Cauthenticated"] = true;
-
+			$_SESSION["staff"]=$_POST["user"];
+			
             $host = $_SERVER["HTTP_HOST"];
             $path = rtrim(dirname($_SERVER["PHP_SELF"]), "/\\");
-            header('Location:kitchen.html');
+            header('Location:kitchen.php');
             exit;
         }
     }
