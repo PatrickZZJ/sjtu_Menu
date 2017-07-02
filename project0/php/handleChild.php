@@ -52,7 +52,7 @@
 <?php
 
 
-if($xml=simplexml_load_file('order.xml')){
+if($xml=simplexml_load_file('../xml/order.xml')){
 	foreach($xml->Xpath('/orders/order[@id="'.$_GET['orderID'].'"]') as $list){
 	  $Order[]=get_object_vars($list);
 	}
@@ -65,7 +65,7 @@ if(isset($Order)&&($_GET['handled']=='no')){
 foreach($Order as $list){
 	$orderID=$list['@attributes']['id'];
 	
-	echo '<iframe src="showOrder.php?orderID='  ,  $orderID  ,  '&handled=yes';
+	echo '<iframe src="../html/showOrder.php?orderID='  ,  $orderID  ,  '&handled=yes';
 	echo '" style="width:310px;height:480px;border:0px solid #bbdddd;margin:0px;" ></iframe>';
 	
 	
@@ -89,7 +89,7 @@ if(isset($Order)&&($_GET['handled']=='yes')){
 foreach($Order as $list){
 	$orderID=$list['@attributes']['id'];
 	
-	echo '<iframe src="showOrder.php?orderID='  ,  $orderID  ,  '&handled=yes';
+	echo '<iframe src="../html/showOrder.php?orderID='  ,  $orderID  ,  '&handled=yes';
 	echo '" style="width:310px;height:480px;border:0px solid #bbdddd;margin:0px;" ></iframe>';
 	
 	

@@ -53,7 +53,7 @@
 <?php
 
 
-if($xml=simplexml_load_file('order.xml')){
+if($xml=simplexml_load_file('../xml/order.xml')){
 	foreach($xml->Xpath('/orders/order[@id="'.$_GET['orderID'].'"]') as $list){
 	  $Order[]=get_object_vars($list);
 	}
@@ -69,12 +69,12 @@ foreach($Order as $list){
 	echo '<div class="unfinishOrder">';
 	
 	echo '<div class="orderHead">订单号:',$orderID,'&nbsp;&nbsp;';
-	echo '<span align="right">桌号:',$Order['0']['desknumber'],'</span></div><br/>';
+	echo '<span style="float:right;">桌号:',$Order['0']['desknumber'],'</span></div><br/>';
 	foreach($xml->Xpath('/orders/order[@id="'.$orderID.'"]/dish') as $list){
 		$dish[$orderID][]=get_object_vars($list);
 	}
 	foreach($dish[$orderID] as $d){
-		echo $d['@attributes']['id']  ,  '<span align="right">&nbsp;&nbsp;'  ,  $d['num']  ,  '份</span><br/>';
+		echo $d['Cname']  ,  '<span style="float:right;">&nbsp;&nbsp;'  ,  $d['num']  ,  '份</span><br/>';
 	}
 	echo '</div>';
 	
@@ -93,12 +93,12 @@ foreach($Order as $list){
 	echo '<div class="finishOrder">';
 	
 	echo '<div class="orderHead">订单号:',$orderID,'&nbsp;&nbsp;';
-	echo '<span align="right">桌号:',$Order['0']['desknumber'],'</span></div><br/>';
+	echo '<span style="float:right;">桌号:',$Order['0']['desknumber'],'</span></div><br/>';
 	foreach($xml->Xpath('/orders/order[@id="'.$orderID.'"]/dish') as $list){
 		$dish[$orderID][]=get_object_vars($list);
 	}
 	foreach($dish[$orderID] as $d){
-		echo $d['@attributes']['id']  ,  '<span align="right">&nbsp;&nbsp;'  ,  $d['num']  ,  '份</span><br/>';
+		echo $d['Cname']  ,  '<span style="float:right;">'  ,  $d['num']  ,  '份</span><br/>';
 	}
 	echo '</div>';
 	
