@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+
+20170630  
+
+20170701
+42-44行是几种类别，href指向菜单中某个地方，target不用改
+
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">                          <!-- 响应式相关-->
+        <title>Select dishes</title>
+         <link rel="stylesheet" href="css\demo.css">                           <!-- 自己写-->
+         <link rel="stylesheet" href="css\frozen.css">
+
+
+
+    </head>
+
+	<body>  <!-- 固定导航栏-->
+			    <header class="ui-header ui-header-positive ui-border-b">
+			 		<i class="ui-icon-return" onclick="history.back()"></i><h1> 商家名称XX </h1>
+                </header>
+				<footer class="ui-footer  ui-footer-btn ui-btn-group">
+					<ul class="ui-tiled ui-border-t">
+						<li><h1>桌号xxx</h1></li>
+						<li><h1>￥xx.xx</h1></li>
+						<li><button class="ui-btn-lg ui-btn-danger" onclick="location.href='order-check.html'"><h2 style="color:white">下单<h2></button></a></li>
+						</ul>
+						
+				</footer>
+			   
+	<section class="ui-container ui-center">
+
+			<iframe src="menu.html" name="iframe_menu">1</iframe>
+			<div class="menu-class">    
+			  <ul >    
+				<li><a href="menu.html#chaocai" target="iframe_menu">炒菜</a></li>    
+				<li><a href="menu.html#xiaochi" target="iframe_menu">小吃</a></li>    
+				<li><a href="menu.html#chaofan" target="iframe_menu">炒饭</a></li> 
+				
+			  </ul>    
+			</div>  
+	</section>
+
+
+		
+	</body>  
+</html>
