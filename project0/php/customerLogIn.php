@@ -7,8 +7,7 @@ session_start();
 if(isset($_GET['desknumber']))
 	{
 		$_SESSION['desknumber']=$_GET['desknumber'];
-		//header('Location:selectPage.php');
-		include('../php/addDish.php');
+		header('Location:selectPage.php');
 		if(empty($_GET['desknumber']))header('Location:customerLogIn.php');
 	}
 ?>
