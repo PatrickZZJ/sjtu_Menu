@@ -1,3 +1,15 @@
+
+<!--
+注释：处理订单业务由handleOrder.php , handleChild.php , showOrder.php三个文件完成，
+handleOrder.php负责将每个订单(order)对应的订单框架<iframe class="finishOrder/unfunushOrder">
+               打印在后台管理页面的查看订单页面中
+handleChild.php负责打印各个订单框架对应的网页，其中包括一个订单详情框架<iframe class="showFinishOrder/showUnfunushOrder">
+               以及一个可以显示并改动完成情况的页脚<footer class="handleFinishOrder/handleUnfinishOrder">
+showOrder.php负责打印订单详情框架，其整体为<div class="finishOrder/unfinishOrder">
+               其中包括显示订单号及桌号的块<div class="orderHead">
+			   
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +20,50 @@
    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
    <script src="bootstrap/js/bootstrap.min.js"></script>
    <style>
-      
-     .unfinishOrder {
+    iframe.finishOrder {
+		 width:320px;
+		 height:600px;
+		 border:2px solid #bbdddd;
+		 background-color:#ffffcc;
+		 }
+	iframe.unfinishOrder {
+		 width:320px;
+		 height:600px;
+		 border:2px solid #ddbbbb;
+		 background-color:#ccffff;
+		 }
+	iframe.showFinishOrder {
+		 width:310px;
+		 height:480px;
+		 border:0px solid #bbdddd;
+		 margin:0px;
+	}
+	iframe.showUnfinishOrder {
+		 width:310px;
+		 height:480px;
+		 border:0px solid #bbdddd;
+		 margin:0px;
+	}
+	footer.handleFinishOrder {
+		font-size:25px;
+		position:absolute;
+		bottom:0px;
+		width="100%";
+		background-color:#eeeeee;
+		color:#111177;
+		margin:2px;
+		background-color:pink;
+	}
+	footer.handleUnfinishOrder {
+		font-size:25px;
+		position:absolute;
+		bottom:0px;
+		width="100%";
+		background-color:#eeeeee;
+		color:#111177;
+		margin:2px;
+		background-color:pink;
+	}div.unfinishOrder {
 		 font-size:25px;
 		 
 		 color:#110077;
@@ -23,25 +77,14 @@
 <!--		 border-bottom-left-radius: 25px;
 		 border-bottom-right-radius: 25px;    -->
 		 }
-	.finishOrder {
+	div.finishOrder {
 		font-size:25px;
-		 
-		 color:#111177;
-		 margin:0px;
-		 padding:15px;
-		 width:250px;
-		 
-		 }
-	.handleStatus {
-		font-size:25px;
-		position:absolute;
-		bottom:0px;
-		width="100%";
-		background-color:#eeeeee;
 		color:#111177;
-		margin:2px;
-	}
-	.orderHead {
+		margin:0px;
+		padding:15px;
+		width:250px;
+		 }
+	div.orderHead {
 		font-size:28px;
 		color:#110077;
 	}
@@ -77,11 +120,6 @@ foreach($Order as $list){
 		echo $d['Cname']  ,  '<span style="float:right;">&nbsp;&nbsp;'  ,  $d['num']  ,  '份</span><br/>';
 	}
 	echo '</div>';
-	
-	
-	
-	
-	
 }
 }
 
@@ -102,17 +140,12 @@ foreach($Order as $list){
 	}
 	echo '</div>';
 	
-	
-	
-	
-	
 }
 }
-
 
 ?>
 
 
 </body>
-
+</html>
 
