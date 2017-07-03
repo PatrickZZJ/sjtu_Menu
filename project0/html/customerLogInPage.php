@@ -43,7 +43,7 @@
 		<h1>一起用餐吧</h1>
 		<br/><br/>
 		 <div class="ui-input ui-border-radius">
-      <input type="number" min="1" max="300" name="desknumber" placeholder="请输入桌号" />      
+      <input type="number" min="1" max="300" name="desknumber" placeholder="请输入桌号" required />      
 		</div>
 	 <br>
       <button  class="ui-btn" type="submit">开始点餐</button>   
