@@ -56,7 +56,7 @@
 			$orderState = "1";
 		}
 	}
-
+	
 	//写入订单  /*确认订单时应将所有的超全局变量归零*/
 	
 	$orderIdSet=$orderThisId;//确定需要写入的订单号（id）
@@ -94,7 +94,6 @@
 							}
 						}
 					}
-					print "(3)";
 					if($flag == "0")
 					{
 						$dishes=$orderId[0]->addChild('dish','');

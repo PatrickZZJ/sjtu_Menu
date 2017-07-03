@@ -10,7 +10,7 @@
      */
 
 	$dom=simplexml_load_file("../xml/menu.xml");
-	$orders=simplexml_load_file("../xml/order.xml");
+	$orders=simplexml_load_file("../xml/addDish.xml");
 	
 	$i=0;
 	//右侧的菜单显示
