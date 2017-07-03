@@ -37,7 +37,7 @@
     <ul>
       <li><a href="customerLogInPage.php">customerLogIn</a></li>
       <li><a href="staffLogInPage.php">staffLogIn</a></li>
-	
+	  
     </ul>
   </body>
 </html>

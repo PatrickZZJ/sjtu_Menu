@@ -3,46 +3,41 @@
 	contributor: Patrick Zhang
   -->
 <menu>
-	<category id="main course" cname="主菜">
+	<category id="mainCourse" cname="主菜">
 		<dish id="GriddleCookedTeaTreeMushrooms">
 			<Cname>干锅茶树菇</Cname>
 			<Ename>Griddle Cooked Tea Tree Mushrooms</Ename>
-			<price>55</price>
-			<picture>../pictures/GriddleCookedTeaTreeMushrooms.jpg</picture>
-			<description>
-			</description>
+			<price>54</price>
+			<picture>pictures/GriddleCookedTeaTreeMushrooms.jpg</picture>
+			<soldOut>否</soldOut>
 		</dish>
 		<dish id="ShreddedPorkwithVegetables">
 			<Cname>农家小炒肉</Cname>
 			<Ename>Shredded Pork with Vegetables</Ename>
 			<price>25</price>
-			<picture>../pictures/ShreddedPorkwithVegetables.jpg</picture>
-			<description>
-			</description>
+			<picture>pictures/ShreddedPorkwithVegetables.jpg</picture>
+			<soldOut>否</soldOut>
 		</dish>
 		<dish id="Stirfriedeggwithspongegourd">
 			<Cname>剁椒丝瓜炒鸡蛋</Cname>
 			<Ename>Stir fried egg with sponge gourd</Ename>
 			<price>35</price>
-			<picture>../pictures/Stirfriedeggwithspongegourd.jpg</picture>
-			<description>
-			</description>
+			<picture>pictures/Stirfriedeggwithspongegourd.jpg</picture>
+			<soldOut>否</soldOut>
 		</dish>
 		<dish id="Chopbellpepperfishhead">
 			<Cname>剁椒鱼头</Cname>
 			<Ename>Chop bell pepper fish head</Ename>
 			<price>25</price>
-			<picture>../pictures/Chopbellpepperfishhead.jpg</picture>
-			<description>
-			</description>
+			<picture>pictures/Chopbellpepperfishhead.jpg</picture>
+			<soldOut>否</soldOut>
 		</dish>
 		<dish id="Grandmafood">
 			<Cname>外婆菜</Cname>
 			<Ename>Grandma food</Ename>
 			<price>24.6</price>
-			<picture>../pictures/Grandmafood.jpg</picture>
-			<description>
-			</description>
+			<picture>pictures/Grandmafood.jpg</picture>
+			<soldOut>否</soldOut>
 		</dish>
 	</category>
 	<category id="seafood" cname="海鲜">
@@ -51,93 +46,72 @@
 			<Ename>boil shrimp</Ename>
 			<price>65</price>
 			<picture>pictures/boilShrimp.jpg</picture>
-			<description>
-				白灼虾是广东省广州地区的一道地方传统名菜。
-				主要食材是虾，主要烹饪工艺是白灼，“白灼”二字指的是将原滋原味的鲜虾直接放进清水里煮食。
-				广州人喜欢用白灼之法来做虾，为的是保持其鲜、甜、嫩的原味，然后将虾剥壳蘸酱汁而食。
-			</description>
+			<soldOut>否</soldOut>
 		</dish>
 		<dish id="abalone">
 			<Cname>鲍鱼</Cname>
 			<Ename>abalone</Ename>
 			<price>0.5</price>
 			<picture>pictures/abalone.jpg</picture>
-			<description>
-			鲍鱼是名贵的“海珍品”之一，味道鲜美，营养丰富，被誉为海洋“软黄金”。
-			鲍鱼是名贵的海洋食用贝类，被誉为“餐桌黄金，海珍之冠”，其肉质细嫩、营养丰富，
-			鲜品可食部分蛋白质24%、脂肪0.44%;干品含蛋白质40%、糖元33.7%、脂肪0.9%以及多种维生素和微量元素，
-			足一种对人体非常有利的高蛋白、低脂肪食物。鲍鱼因富含谷氨酸，味道非常鲜美。
-			</description>
+			<soldOut>否</soldOut>
 		</dish>
 		<dish id="steamedscallopwithgarlicvermicelli">
 			<Cname>蒜蓉粉丝蒸扇贝</Cname>
 			<Ename>steamed scallop with garlic vermicelli</Ename>
 			<price>57.2</price>
 			<picture>pictures/scallop.jpg</picture>
-			<description>
-			</description>
+			<soldOut>否</soldOut>
 		</dish>
 		<dish id="garliccrayfish">
 			<Cname>蒜蓉小龙虾</Cname>
 			<Ename>garlic crayfish</Ename>
 			<price>76</price>
 			<picture>pictures/crayfish.jpg</picture>
-			<description>
-			</description>
+			<soldOut>否</soldOut>
 		</dish>
 		<dish id="salmon">
 			<Cname>三文鱼片</Cname>
 			<Ename>salmon</Ename>
 			<price>26</price>
 			<picture>pictures/salmon.jpg</picture>
-			<description>
-			</description>
+			<soldOut>否</soldOut>
 		</dish>
 	</category>
 	<category id="dessert" cname="甜点">
 		<dish id="moonCake">
-			<Cname>月饼</Cname>
+			<Cname>交大月饼</Cname>
 			<Ename>mooncake</Ename>
-			<price>15</price>
-			<picture>../pictures/moonCake.jpg</picture>
-			<description>
-			月饼内馅多采用植物性原料种子，如核桃仁、杏仁、芝麻仁、瓜子、山楂、莲蓉、红小豆、枣泥等，对人体有一定的保健作用。
-			植物性的种子含不饱和脂肪酸高，以油酸、亚油酸居多，对软化血管防止动脉硬化有益；
-			含矿物质，有利于提高免疫力，预防儿童锌缺乏、缺铁贫血；莲子、红小豆、芝麻含钾很高，置换细胞内钠盐排出，营养心肌、调节血压；			从中医角度看，一些原料性温平居多，强心、镇静、安神，一些种子富含维生素E，抗衰老，滋皮肤、乌须发。
-			月饼可以软化血管，防止动脉硬化，提高免疫力。
-			</description>
+			<price>10</price>
+			<picture>pictures/moonCake.jpg</picture>
+			<soldOut>否</soldOut>
 		</dish>
 		<dish id="Macaron">
 			<Cname>马卡龙</Cname>
 			<Ename>Macaron</Ename>
 			<price>25</price>
-			<picture>../pictures/Macaron.jpg</picture>
-			<description>
-			</description>
+			<picture>pictures/Macaron.jpg</picture>
+			<soldOut>否</soldOut>
 		</dish>
 		<dish id="strawberryicecream">
 			<Cname>草莓冰激凌</Cname>
 			<Ename>strawberry icecream</Ename>
 			<price>35</price>
-			<picture>../pictures/strawberryicecream.jpg</picture>
-			<description>
-			</description>
+			<picture>pictures/strawberryicecream.jpg</picture>
+			<soldOut>是</soldOut>
 		</dish>
 		<dish id="stratiformcake">
 			<Cname>榴莲千层蛋糕</Cname>
 			<Ename>stratiform cake</Ename>
 			<price>25</price>
-			<picture>../pictures/stratiformcake.jpg</picture>
-			<description>
-			</description>
+			<picture>pictures/stratiformcake.jpg</picture>
+			<soldOut>否</soldOut>
 		</dish>
 		<dish id="Tiramisu">
 			<Cname>提拉米苏</Cname>
 			<Ename>Tiramisu</Ename>
 			<price>35</price>
-			<picture>../pictures/Tiramisu.jpg</picture>
-			<description>
-			</description>
+			<picture>pictures/Tiramisu.jpg</picture>
+			<soldOut>否</soldOut>
 		</dish>
-	</category>
+	<dish id="sweetdumpling"><Cname>糖油粑粑</Cname><Ename>sweet dumpling</Ename><price>15</price><soldOut>否</soldOut><picture>pictures/sweetdumpling1499074647.jpg</picture></dish></category>
 </menu>

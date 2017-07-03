@@ -16,10 +16,16 @@ showOrder.php负责打印订单详情框架，其整体为<div class="finishOrde
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--bootstrap
    <link href="css.css" rel="stylesheet" type="text/css">
    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
    <script src="bootstrap/js/bootstrap.min.js"></script>
+-->
+   <link rel="stylesheet" href="css\frozen.css">
+   <link rel="stylesheet" href="css\demo-order-chef.css">
+</head>
+<!--
    <style>
       
     iframe.finishOrder {
@@ -65,19 +71,20 @@ showOrder.php负责打印订单详情框架，其整体为<div class="finishOrde
 		color:#111177;
 		margin:2px;
 		background-color:pink;
-	}div.unfinishOrder {
+	}
+	div.unfinishOrder {
 		 font-size:25px;
 		 
 		 color:#110077;
 		 margin:0px;
 		 padding:15px;
 		 width:250px;
-<!--		 height:450px;-->
+		/* height:450px;-*/
 		 border:1px solid #ddbbbb;
 		 border-top-left-radius: 25px;
 		 border-top-right-radius: 25px;
-<!--		 border-bottom-left-radius: 25px;
-		 border-bottom-right-radius: 25px;    -->
+		/* border-bottom-left-radius: 25px;
+		 border-bottom-right-radius: 25px;    */
 		 }
 	div.finishOrder {
 		font-size:25px;
@@ -91,8 +98,7 @@ showOrder.php负责打印订单详情框架，其整体为<div class="finishOrde
 		color:#110077;
 	}
 </style>
-</head>
-
+-->
 <body>
 
 <?php
@@ -116,12 +122,14 @@ foreach($Order as $list){
 	
 	
 	echo '<footer class="handleUnfinishOrder">';
-	echo '完成情况：未完成';//$unfinishOrder["{$orderID}"]['handled'];
+	echo '<div style="color:red">完成情况：未完成&#12288&#12288&#12288&#12288</div>';//$unfinishOrder["{$orderID}"]['handled'];
 	echo '<form action="handleOrder.php" method="get" target="_parent">';
 	echo '<input type="hidden" name="orderID" value="'  ,  $orderID  ,  '"/>'  ;
-	echo '<input type="radio" name="handled" value="yes"  checked />完成';
-	echo '<input type="radio" name="handled" value="no"/>未完成  <br/>';
-	echo '<div style="align:center"><input type="submit" value="确定"   style="height:38px;width:180px;font-size:30px;font-color:#4444ff"/></div>';
+	echo '<div>
+	<input type="radio" name="handled" value="yes" checked />完成&#12288
+	<input type="radio" name="handled" value="no"/>未完成&#12288
+	<input class="ui-btn" type="submit" value="&#12288确定&#12288"/>&#12288
+	</div>';
 	echo '</form>';
 	echo '</footer>';
 	
@@ -140,12 +148,15 @@ foreach($Order as $list){
 	
 	
 	echo '<footer class="handleFinishOrder">';
-	echo '完成情况：已完成';
+	echo '<div>完成情况：已完成&#12288&#12288&#12288&#12288</div>';
 	echo '<form action="handleOrder.php" method="get" target="_parent">';
 	echo '<input type="hidden" name="orderID" value="'  ,  $orderID  ,  '"/>'  ;
-	echo '<input type="radio" name="handled" value="yes" />完成';
-	echo '<input type="radio" name="handled" value="no" checked />未完成  <br/>';
-	echo '<div style="align:center"><input type="submit" value="确定"   style="height:38px;width:180px;font-size:30px;font-color:#4444ff"/></div>';
+	echo '<div>
+	<input type="radio" name="handled" value="yes"/>完成&#12288
+	<input type="radio" name="handled" value="no" checked />未完成&#12288
+	<input class="ui-btn" type="submit" value="&#12288确定&#12288"/>&#12288
+	</div>';
+	/*input style="height:38px;width:180px;font-size:30px;font-color:#ff0000" */
 	echo '</form>';
 	echo '</footer>';
 	

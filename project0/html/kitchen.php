@@ -25,7 +25,7 @@
 			<img src="images/timg.jpg" width="79" height="70" alt="">
 			</div>
 			<div class="navbar-form navbar-left">
-	<h1><strong>一起去点餐后台管理系统</strong></h1>
+	<h1><strong>一起用餐吧后台管理系统</strong></h1>
 			</div>
 	<div id="navbar-menu">
 		<ul class="nav navbar-nav navbar-right">
@@ -36,15 +36,15 @@
 		<i class="glyphicon glyphicon-chevron-down"></i>
 			</a>
 		<ul class="dropdown-menu">
-	<li><a href="info.html" target="watch"><span>个人信息</span></a></li>
-	<li><a href="settings.html" target="watch"><span>用户设置</span></a></li>
-	<li><a href="login.html"><span>退出系统</span></a></li>
+	<li><a href="" target="watch"><span>个人信息</span></a></li>
+	<li><a href="" target="watch"><span>用户设置</span></a></li>
+	<li><a href=""><span>退出系统</span></a></li>
 		</ul></li></ul></div></div></nav>
 		<div id="left2">
 	<nav>
 		<ul class="nav">
      <li><a href="handleOrder.php" target="watch"><span>查看订单</span></a></li>
-     <li><a href="AD.html" target="watch"><span>处理菜单</span></a></li>
+     <li><a href="menu-manager-guide.php" target="watch"><span>处理菜单</span></a></li>
      <li><a href="allsettings.html" target="watch"><span>系统设置</span></a></li>
      <li><a href="helper.html" target="watch"><span>服务中心</span></a></li>
 		</ul></nav></div>
