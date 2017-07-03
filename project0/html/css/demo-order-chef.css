@@ -1,0 +1,82 @@
+
+    iframe.finishOrder {
+		 width:320px;
+		 height:450px;/*一个订单高度*/
+		 border:2px solid #efefef;
+		 color:#959595;
+		 margin:5px;
+		 background-color:#ffffff;
+		 }
+	iframe.unfinishOrder {
+		 width:320px;
+		 height:450px;
+		 border:2px solid #e97d86;
+		background-color:#ffffff;
+		 margin:5px;
+		 }
+/************************************************************/
+	iframe.showFinishOrder {
+		 width:300px;
+		 height:370px;/*订单详情高度*/
+		 border:10px solid #fffbff;
+		 background-color:#ffffff;
+		 margin:0px;
+	}
+	iframe.showUnfinishOrder {
+		 width:300px;
+		 height:370px;/*订单详情高度*/
+		 border:10px solid #fffbff;
+		 background-color:#ffffff;
+		 margin:0px;
+		 
+	}
+/***************************************************************/	
+	footer.handleFinishOrder {
+		height:60px;
+		font-size:19px;
+		position:absolute;
+		bottom:0px;
+		width:100%;
+		margin:0;
+		background-color:#ffffff;/*foot背景色*/
+		border-top:thin solid #31a2d6;
+	}
+	footer.handleFinishOrder div{
+		color:#31a2d6;
+		float:right;
+	}
+	footer.handleUnfinishOrder {
+		height:60px;
+		font-size:19px;
+		position:absolute;
+		bottom:0px;
+		width:100%;
+		margin:0;
+		background-color:#ffffff;/*foot背景色*/
+		border-top:thin solid #31a2d6;
+	}
+	footer.handleUnfinishOrder div{
+		color:#31a2d6;
+		float:right;
+	}
+	
+/*************************************************************/
+		 
+	div.orderHead {
+		font-size:22px;
+		color:#31a2d6;/*626262*/
+		border-bottom:thin solid #31a2d6;
+		}
+	
+/*************************************************************/
+
+	div.unfinishOrder {
+		 font-size:18px;
+		 margin:0px;
+		 padding:15px;
+		 }
+	div.finishOrder {
+		font-size:18px;
+		margin:0px;
+		padding:15px;
+		 }		 
