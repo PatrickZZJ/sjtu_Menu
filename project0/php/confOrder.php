@@ -18,7 +18,7 @@
 		}
 	}
 	$orderThis=$orders->xpath('/orders/order[@id="'.$orderId.'"]');
-	$orderThis[0]->handle="No";
+	$orderThis[0]->handle="no";
 	
 	//添加新订单
 	$newOrders = $addOrder->xpath('/orders');
