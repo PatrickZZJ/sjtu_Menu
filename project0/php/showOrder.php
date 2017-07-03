@@ -15,80 +15,15 @@ showOrder.php负责打印订单详情框架，其整体为<div class="finishOrde
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--bootstrap
    <link href="css.css" rel="stylesheet" type="text/css">
    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
    <script src="bootstrap/js/bootstrap.min.js"></script>
-   <style>
-    iframe.finishOrder {
-		 width:320px;
-		 height:600px;
-		 border:2px solid #bbdddd;
-		 background-color:#ffffcc;
-		 }
-	iframe.unfinishOrder {
-		 width:320px;
-		 height:600px;
-		 border:2px solid #ddbbbb;
-		 background-color:#ccffff;
-		 }
-	iframe.showFinishOrder {
-		 width:310px;
-		 height:480px;
-		 border:0px solid #bbdddd;
-		 margin:0px;
-	}
-	iframe.showUnfinishOrder {
-		 width:310px;
-		 height:480px;
-		 border:0px solid #bbdddd;
-		 margin:0px;
-	}
-	footer.handleFinishOrder {
-		font-size:25px;
-		position:absolute;
-		bottom:0px;
-		width="100%";
-		background-color:#eeeeee;
-		color:#111177;
-		margin:2px;
-		background-color:pink;
-	}
-	footer.handleUnfinishOrder {
-		font-size:25px;
-		position:absolute;
-		bottom:0px;
-		width="100%";
-		background-color:#eeeeee;
-		color:#111177;
-		margin:2px;
-		background-color:pink;
-	}div.unfinishOrder {
-		 font-size:25px;
-		 
-		 color:#110077;
-		 margin:0px;
-		 padding:15px;
-		 width:250px;
-<!--		 height:450px;-->
-		 border:1px solid #ddbbbb;
-		 border-top-left-radius: 25px;
-		 border-top-right-radius: 25px;
-<!--		 border-bottom-left-radius: 25px;
-		 border-bottom-right-radius: 25px;    -->
-		 }
-	div.finishOrder {
-		font-size:25px;
-		color:#111177;
-		margin:0px;
-		padding:15px;
-		width:250px;
-		 }
-	div.orderHead {
-		font-size:28px;
-		color:#110077;
-	}
-</style>
+-->
+   <link rel="stylesheet" href="css\frozen.css">
+   <link rel="stylesheet" href="css\demo-order-chef.css">
+
 </head>
 
 <body>
@@ -111,8 +46,8 @@ foreach($Order as $list){
 	
 	echo '<div class="unfinishOrder">';
 	
-	echo '<div class="orderHead">订单号:',$orderID,'&nbsp;&nbsp;';
-	echo '<span style="float:right;">桌号:',$Order['0']['desknumber'],'</span></div><br/>';
+	echo '<div class="orderHead">订单号：',$orderID,'&nbsp;&nbsp;';
+	echo '<span style="float:right;">桌号：',$Order['0']['desknumber'],'</span></div><br/>';
 	foreach($xml->Xpath('/orders/order[@id="'.$orderID.'"]/dish') as $list){
 		$dish[$orderID][]=get_object_vars($list);
 	}
@@ -130,8 +65,8 @@ foreach($Order as $list){
 	
 	echo '<div class="finishOrder">';
 	
-	echo '<div class="orderHead">订单号:',$orderID,'&nbsp;&nbsp;';
-	echo '<span style="float:right;">桌号:',$Order['0']['desknumber'],'</span></div><br/>';
+	echo '<div class="orderHead">订单号：',$orderID,'&nbsp;&nbsp;';
+	echo '<span style="float:right;">桌号：',$Order['0']['desknumber'],'</span></div><br/>';
 	foreach($xml->Xpath('/orders/order[@id="'.$orderID.'"]/dish') as $list){
 		$dish[$orderID][]=get_object_vars($list);
 	}
