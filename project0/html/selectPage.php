@@ -57,7 +57,7 @@
 						print "￥".$total;
 					?>
 				</h1></li>
-				<li><button class="ui-btn-lg ui-btn-danger" onclick="location.href='order-check.html'"><h2 style="color:white">下单<h2></button></a></li>
+				<li><button class="ui-btn-lg ui-btn-danger" onclick="location.href='makeOrder.php'"><h2 style="color:white">下单<h2></button></a></li>
 				</ul>
 		</footer>
 		

@@ -1,44 +1,67 @@
 <?php
-error_reporting(0);
+	error_reporting(7);//错误显示
 /*	addDishes.php
-*	addDish.php realize adding dishes.
-*
-*	Update time:7/2/2017 20:00
-*	By Moton Shao
+
+	addDish.php realize adding dishes.
+	20170702 20:00
+	
+	实现多人多桌实时点餐；对点餐数据和订单数据实现分离
+	20170703 17:08
+	
+	By Moton Shao
 */
 
 	$menu=simplexml_load_file("../xml/menu.xml");
-	$orders=simplexml_load_file("../xml/order.xml");//订单xml
+	$orders=simplexml_load_file("../xml/addDish.xml");//订单xml
 	$ordersNum=$orders->xpath('/orders');
 	
-	if(!isset($orders->state))//判断是否为同一订单
+	$orderState = "0";
+	if(!isset($ordersNum[0]->ordersNum))//验证是否已创建过订单
 	{
-		if(!isset($ordersNum[0]->ordersNum))
+		$orders->addChild('ordersNum','1');
+		$ordersNumSet="1";
+		//创建新订单
+		$order = $orders->addChild('order','');
+		$order->addAttribute('id',$ordersNumSet);
+		$desknumber = $order->addChild('desknumber',$_SESSION["desknumber"]);
+		$order->addChild('total','0');
+		$order->addChild('handle','ordering');
+	}
+	else
+	{
+		$ordersNumSet=$orders->ordersNum;
+		foreach($orders->order as $order)//查找所有正在进行的订单，若有此桌号，orderState为1,跳过创建
 		{
-			$orders->addChild('ordersNum','1');
-			$ordersNumSet="1";
-			$ordersNumSet=(int)($ordersNumSet);
-			$_SESSION['n']=$ordersNumSet;
+			
+			$deskNum=$order->desknumber;
+			if($deskNum == $_SESSION['desknumber'])
+			{
+				$orderState = "1";
+				$orderThisAttr=$order->attributes();
+				$orderThisId=$orderThisAttr['id'];
+			}
 		}
-		else
+		if($orderState == "0")//若没有此桌号，则创建新订单
 		{
-			$ordersNumSet=$ordersNum[0]->ordersNum;
 			$ordersNumSet=(int)($ordersNumSet);
 			$ordersNumSet++;
 			$ordersNum[0]->ordersNum=$ordersNumSet;
-			$_SESSION['n']=$ordersNumSet;
+			$orderThisId = $ordersNumSet;
+			//创建新订单
+			$newOrder = $orders->addChild('order','');
+			$newOrder->addAttribute('id',$ordersNumSet);
+			$desknumber = $newOrder->addChild('desknumber',$_SESSION["desknumber"]);
+			$newOrder->addChild('total','0');
+			$newOrder->addChild('handle','ordering');
+			$orderState = "1";
 		}
-		$order = $orders->addChild('order','');
-		$order->addAttribute('id',$_SESSION['n']);
-		$desknumber = $order->addChild('desknumber',$_SESSION["desknumber"]);
-		$order->addChild('total','0');
-		$orders->addChild('state','1');
 	}
+	
 	//写入订单  /*确认订单时应将所有的超全局变量归零*/
 	
-	$orderIdSet=$orders->ordersNum;
+	$orderIdSet=$orderThisId;//确定需要写入的订单号（id）
 	$orderId=$orders->xpath('/orders/order[@id="'.$orderIdSet.'"]');//**确定需要写入的订单
-	$total=$orderId[0]->total;
+	$total=(float)($orderId[0]->total);
 	
 	foreach($menu->category as $category)
 	{
@@ -71,7 +94,6 @@ error_reporting(0);
 							}
 						}
 					}
-					print "(3)";
 					if($flag == "0")
 					{
 						$dishes=$orderId[0]->addChild('dish','');
@@ -91,11 +113,13 @@ error_reporting(0);
 					{
 						$num=$odxp[0]->num;
 						$num=(int)($num);
-						$num--;
-						$price = (float)($odxp[0]->price);
-						if($num<0){$num++;$price=0;}
-						$odxp[0]->num=$num;
-						$total=$total - $price;
+						if($num>0)
+						{
+							$num--;
+							$price = (float)($odxp[0]->price);
+							$odxp[0]->num=$num;
+							$total=$total - $price;
+						}
 					}
 				}
 				unset($_GET["{$dishIdSet}"]);
@@ -107,6 +131,6 @@ error_reporting(0);
 			}
 		}
 	}
-	$orders->asXML('../xml/order.xml');//整合至xml
+	$orders->asXML('../xml/addDish.xml');//整合至xml
 ?>
 
