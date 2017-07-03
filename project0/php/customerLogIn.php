@@ -1,13 +1,12 @@
-<!--
-顾客登录页切换至点餐页
--->
 <?php
+require("../classDefine/controllerDefine.php");
 session_start();
-//处理表单
+
 if(isset($_GET['desknumber']))
 	{
-		$_SESSION['desknumber']=$_GET['desknumber'];
-		header('Location:selectPage.php');
-		if(empty($_GET['desknumber']))header('Location:customerLogIn.php');
-	}
+		$_SESSION['desknumber']		=$_GET['desknumber'];
+		$customerLogInController	=new logInController;
+		$customerLogInController->customerLogInProcess();
+		if(empty($_GET['desknumber']))header('Location:customerLogInPage.php');
+	}	
 ?>
