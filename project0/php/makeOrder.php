@@ -1,5 +1,5 @@
 <?php
-	error_reporting(0);//错误显示
+	error_reporting(7);//错误显示
 /* 	makeOrder.php
 	
 	20170703 17:05
@@ -47,5 +47,5 @@
 	}
 	$orders->asXML('../xml/addDish.xml');
 	
-	header('Location:orderCheck.html');
+	header('Location:order-check-customer.php');
 ?>
