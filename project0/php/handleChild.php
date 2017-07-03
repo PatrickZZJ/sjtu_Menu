@@ -111,7 +111,7 @@ if(isset($Order)&&($_GET['handled']=='no')){
 foreach($Order as $list){
 	$orderID=$list['@attributes']['id'];
 	
-	echo '<iframe src="../html/showOrder.php?orderID='  ,  $orderID  ,  '&handled=yes';
+	echo '<iframe src="showOrder.php?orderID='  ,  $orderID  ,  '&handled=yes';
 	echo '" class="showUnfinishOrder"></iframe>';
 	
 	
@@ -135,7 +135,7 @@ if(isset($Order)&&($_GET['handled']=='yes')){
 foreach($Order as $list){
 	$orderID=$list['@attributes']['id'];
 	
-	echo '<iframe src="../html/showOrder.php?orderID='  ,  $orderID  ,  '&handled=yes';
+	echo '<iframe src="showOrder.php?orderID='  ,  $orderID  ,  '&handled=yes';
 	echo '" class="showFinishOrder" ></iframe>';
 	
 	
