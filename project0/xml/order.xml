@@ -2,7 +2,7 @@
 <!--In this xml file stores the data of orders
   -->
 <orders>
-	<order id="1">
+	<order id="0">
 		<desknumber>1</desknumber>
 		<dish id="moonCake">
 			<Cname>月饼</Cname>
@@ -11,6 +11,26 @@
 		</dish>
 		<total>30</total>
 		<handled>no</handled>
+	</order>
+	<order id="1">
+		<desknumber>19</desknumber>
+		<dish id="Cake">
+			<Cname>蛋糕</Cname>
+			<price>15</price>
+			<num>2</num>
+		</dish>
+		<dish id="Cakesss">
+			<Cname>但蛋糕</Cname>
+			<price>5</price>
+			<num>2</num>
+		</dish>
+		<dish id="Caker">
+			<Cname>或高一</Cname>
+			<price>5</price>
+			<num>3</num>
+		</dish>
+		<total>45</total>
+	<handled>no</handled>
 	</order>
 	<order id="2">
 		<desknumber>19</desknumber>
@@ -30,7 +50,7 @@
 			<num>3</num>
 		</dish>
 		<total>45</total>
-	<handled>no</handled>
+	<handled>yes</handled>
 	</order>
 	<order id="3">
 		<desknumber>19</desknumber>
@@ -50,26 +70,8 @@
 			<num>3</num>
 		</dish>
 		<total>45</total>
-	<handled>no</handled>
-	</order>
-	<order id="4">
-		<desknumber>19</desknumber>
-		<dish id="Cake">
-			<Cname>蛋糕</Cname>
-			<price>15</price>
-			<num>2</num>
-		</dish>
-		<dish id="Cakesss">
-			<Cname>但蛋糕</Cname>
-			<price>5</price>
-			<num>2</num>
-		</dish>
-		<dish id="Caker">
-			<Cname>或高一</Cname>
-			<price>5</price>
-			<num>3</num>
-		</dish>
-		<total>45</total>
 	<handled>yes</handled>
 	</order>
-<ordersNum>1</ordersNum><order id="1"><desknumber>1</desknumber><total>0</total></order><state>1</state></orders>
+<ordersNum>1</ordersNum>
+<state>1</state>
+</orders>
