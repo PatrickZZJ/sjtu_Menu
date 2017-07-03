@@ -25,7 +25,7 @@
 		$order->addAttribute('id',$ordersNumSet);
 		$desknumber = $order->addChild('desknumber',$_SESSION["desknumber"]);
 		$order->addChild('total','0');
-		$order->addChild('handle','ordering');
+		$order->addChild('handled','ordering');
 	}
 	else
 	{
@@ -52,7 +52,7 @@
 			$newOrder->addAttribute('id',$ordersNumSet);
 			$desknumber = $newOrder->addChild('desknumber',$_SESSION["desknumber"]);
 			$newOrder->addChild('total','0');
-			$newOrder->addChild('handle','ordering');
+			$newOrder->addChild('handled','ordering');
 			$orderState = "1";
 		}
 	}
