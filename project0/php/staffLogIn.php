@@ -1,7 +1,6 @@
 <?php
     require("../classDefine/controllerDefine.php");
-	session_start();
-
+ 
     // were this not a demo, these would be in some database
     define("MUSER", "isManager");
     define("MPASS", "isMPassword");
