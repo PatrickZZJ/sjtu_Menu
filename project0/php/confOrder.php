@@ -68,5 +68,7 @@
 		}
 		$j++;
 	}
+
 	$orders->asXML('../xml/addDish.xml');
+	unset($_SESSION['desknumber']);
 ?>
