@@ -40,7 +40,7 @@
 				<form action='selectPage.php' method='get' target='_top'>
 					<input type='hidden' name=".$dishIdSet." value='A'>
 					<input type='hidden' name='dishctg' value='".$ctgid[0]."' />
-					<input type='submit' value='+'>
+					<input type='submit' value=' ＋ '>
 				</form>
 				<h3>");
 			$orderId=$orders->ordersNum;
@@ -58,7 +58,7 @@
 				<form action='selectPage.php' method='get' target='_top'>
 					<input type='hidden' name=".$dishIdSet." value='D'/>
 					<input type='hidden' name='dishctg' value='".$ctgid[0]."' />
-					<input type='submit' value='-' />
+					<input type='submit' value=' — ' />
 				</form>
 				</li>
 			</ul>");
