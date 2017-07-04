@@ -1,10 +1,45 @@
-.menu-class {width:20%; background:#6a7d8f; height:100%; font-size:14px; font-family: "微软雅黑";position:fixed;top:45px;left:0;}    
+/*
+20170701 
+menuclass、iframe的定位固定
+把home.html里的样式表移到了该文件中
+
+20170704
+把菜单的iframe移出css 放进了具体文件
+*/
+
+/*select*/
+.menu-class {width:17%; background:#6a7d8f; height:100%; font-size:14px; font-family: "微软雅黑";position:fixed;top:45px;left:0;}    
 .menu-class ul {padding:0px; list-style-type:none;}    
-.menu-class ul li {width:100%; height:50px; line-height:35px; text-align:center;}    
+.menu-class ul li {width:100%; height:50px; line-height:50px; text-align:center;}    
 .menu-class ul li a {text-decoration:none; color:#fff; display:block;}    
 .menu-class ul li a:active {background:#fff; color:#000;}    
 .menu-class ul li a:focus {background:#fff; color:#000;}    
 
-button { background:#6a7d8f;}
+/*深蓝色：#6a7d8f*/
 
-iframe {position:fixed; width:80%; left:20%;height:100%}
+/*iframe {position:fixed;width:83%;left:17%;height:100%;top:44px}*/
+
+/*order-check*/
+
+/*home*/
+ .wrapper {
+  display:table;
+  width:60%;
+  height:100%;
+  margin:0 auto;
+}
+
+.form-1 {
+	max-width:100%;
+  margin-top: 25%;
+}
+
+ .wrapper div {
+	font-size:24px;
+	width:60%;
+    margin:0 auto;
+	margin-top: 40%;
+}
+
+
+/*manager*/
