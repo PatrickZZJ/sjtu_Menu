@@ -43,18 +43,17 @@ if(	isset($_SESSION["desknumber"]))
 
 <body>
 
-<div class="wrapper" align="center">
-		<form class="form-1" align="center" action="customerLogInPage.php" > 
-		<br>
+<div class="wrapper">
+	<form class="form-1" action="customerLogInPage.php" > 
 		<img src="images/timg.jpg" width="180" height="160"/>
-		<h1>一起用餐吧</h1>
-		<br/><br/>
-		 <div class="ui-input ui-border-radius">
-      <input type="number" min="1" max="300" name="desknumber" placeholder="请输入桌号" required />      
+		<h1 style="font-size:30px;">一起用餐吧</h1>
+		<br/>
+		<br/>
+		<div class="ui-input ui-border-radius">
+			<input type="number" min="1" max="300" name="desknumber" placeholder="请输入桌号" required />      
 		</div>
-	 <br>
-      <button  class="ui-btn" type="submit">开始点餐</button>   
-    </form>
+		<button  class="ui-btn" type="submit">开始点餐</button>   
+	</form>
   </div>
 
 </body>
