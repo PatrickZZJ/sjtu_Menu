@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 require("entityDefine.php");
 
@@ -8,8 +8,9 @@ class logInController
 	function customerLogInProcess()
 	{
 			$customerOne=new customer($_SESSION['desknumber']);
-			include('../html/selectPage.php');
+			header('Location:selectPage.php');
 	}
+	
 	function staffLogInProcess()
 	{
 		define("MUSER", "isManager");
