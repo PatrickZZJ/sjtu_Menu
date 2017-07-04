@@ -18,7 +18,7 @@
 		}
 	}
 	$orderThis=$orders->xpath('/orders/order[@id="'.$orderId.'"]');
-	$orderThis[0]->handle="No";
+	$orderThis[0]->handled="no";
 	
 	//添加新订单
 	$newOrders = $addOrder->xpath('/orders');
@@ -32,8 +32,8 @@
 	$total = $orderThis[0]->total;
 	$newOrderSet->addChild('total',$total);//添加order中total节点
 	
-	$handle = $orderThis[0]->handle;
-	$newOrderSet->addChild('handle',$handle);//添加order中handle节点
+	$handled = $orderThis[0]->handled;
+	$newOrderSet->addChild('handled',$handled);//添加order中handle节点
 	
 	$desknumber = $orderThis[0]->desknumber;
 	$newOrderSet->addChild('desknumber',$desknumber);//添加order中desknumber节点
