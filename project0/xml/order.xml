@@ -1,3 +1,14 @@
 <?xml version="1.0" encoding="gb2312"?>
-<!--In this xml file stores the data of orders -->
-<orders></orders>
+<!--In this xml file stores the data of orders
+  -->
+<orders>
+    <state>1</state>
+    <orderNum>17</orderNum>
+    <order id="17">
+	<total>267.2</total><handled>no</handled><desknumber>2</desknumber>
+	<dish id="GriddleCookedTeaTreeMushrooms"><num>1</num><price>55</price>
+	<Cname>干锅茶树菇</Cname></dish><dish id="Chopbellpepperfishhead"><num>1</num>
+	<price>25</price><Cname>剁椒鱼头</Cname></dish><dish id="boilShrimp"><num>2</num>
+	<price>65</price><Cname>白灼虾</Cname></dish>
+	<dish id="steamedscallopwithgarlicvermicelli"><num>1</num><price>57.2</price>
+	<Cname>蒜蓉粉丝蒸扇贝</Cname></dish></order></orders>
