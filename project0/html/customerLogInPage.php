@@ -17,7 +17,7 @@
 	2.去掉了jquery
 	
 20170703
-	修改后的页面
+	修改后的页面 
 -->
 <?php include('../php/customerLogIn.php')?>
 
