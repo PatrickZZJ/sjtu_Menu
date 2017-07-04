@@ -39,6 +39,7 @@
 				<li>
 				<form action='selectPage.php' method='get' target='_top'>
 					<input type='hidden' name=".$dishIdSet." value='A'>
+					<input type='hidden' name='dishctg' value='".$ctgid[0]."' />
 					<input type='submit' value='+'>
 				</form>
 				<h3>");
@@ -55,7 +56,8 @@
 			else print "0";
 			print("</h3>
 				<form action='selectPage.php' method='get' target='_top'>
-					<input type='hidden' name=".$dishIdSet." value='D'>
+					<input type='hidden' name=".$dishIdSet." value='D'/>
+					<input type='hidden' name='dishctg' value='".$ctgid[0]."' />
 					<input type='submit' value='-' />
 				</form>
 				</li>

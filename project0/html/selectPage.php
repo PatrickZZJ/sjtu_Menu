@@ -15,13 +15,13 @@
 -->
 <?php 
 	session_start();
-	if(	isset($_SESSION["desknumber"]))
-	{}
+	if(	isset($_SESSION["desknumber"])){}
 	else header("Location:customerLogInPage.php");
 	include('../php/addDish.php');
+	
 ?>
 <!DOCTYPE html>
- 
+
 
 <html>
     <head>
@@ -62,8 +62,12 @@
 		</footer>
 		
 <section class="ui-container ui-center">
-
-			<iframe src="menu.php" name="iframe_menu">1</iframe>
+			<?php if(isset($_GET["dishctg"])){
+					$i=1;
+					if($_GET["dishctg"]=="seafood")$i=2;
+					if($_GET["dishctg"]=="dessert")$i=3;
+			};?>
+			<?php print("<iframe src='menu.php#c".$i."' name='iframe_menu'>1</iframe>");?>
 			<div class="menu-class">    
 			  <ul >    
 			  <?php include('../php/loadCategory.php')?>
