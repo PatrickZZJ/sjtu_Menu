@@ -67,7 +67,7 @@
 					if($_GET["dishctg"]=="seafood")$i=2;
 					if($_GET["dishctg"]=="dessert")$i=3;
 			};?>
-			<?php print("<iframe src='menu.php#c".$i."' name='iframe_menu'>1</iframe>");?>
+			<?php print("<iframe style='position:fixed; width:83%; left:17%;height:100%;top:45px;' src='menu.php#c".$i."' name='iframe_menu'>1</iframe>");?>
 			<div class="menu-class">    
 			  <ul >    
 			  <?php include('../php/loadCategory.php')?>
