@@ -11,7 +11,7 @@
 
 	$dom=simplexml_load_file("../xml/menu.xml");
 	$orders=simplexml_load_file("../xml/addDish.xml");
-	
+	$_SESSION['makeorder'] = "1";
 	$i=0;
 	//右侧的菜单显示
 		foreach($dom->category as $category)
