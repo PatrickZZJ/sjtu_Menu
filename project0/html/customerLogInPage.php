@@ -19,7 +19,14 @@
 20170703
 	修改后的页面 
 -->
-<?php include('../php/customerLogIn.php')?>
+<?php 
+include('../php/customerLogIn.php');
+if(	isset($_SESSION["desknumber"]))
+	{
+		header('Location:selectPage.php');
+	}
+
+?>
 
 <!DOCTYPE html>
 <html >
