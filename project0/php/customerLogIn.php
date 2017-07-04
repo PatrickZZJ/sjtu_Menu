@@ -1,12 +1,11 @@
 <?php
 require("../classDefine/controllerDefine.php");
-session_start();
 
 if(isset($_GET['desknumber']))
 	{
 		$_SESSION['desknumber']		=$_GET['desknumber'];
 		$customerLogInController	=new logInController;
-		$customerLogInController->customerLogInProcess();
+		$customerLogInController->customerLogInProcess(); 
 		if(empty($_GET['desknumber']))header('Location:customerLogInPage.php');
 	}	
 ?>
