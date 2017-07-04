@@ -38,6 +38,14 @@
 	$desknumber = $orderThis[0]->desknumber;
 	$newOrderSet->addChild('desknumber',$desknumber);//添加order中desknumber节点
 		
+	date_default_timezone_set("Asia/Shanghai");
+	$date = date("Y/m/d");
+	$newOrderSet->addChild('date',$date);//添加order中date节点
+	
+	$time = date("h:i a");
+	$newOrderSet->addChild('time',$time);//添加order中time节点
+	
+	//添加dish节点树
 	foreach($orderThis[0]->dish as $dish)
 	{
 		$dishIdArr = $dish->attributes();
