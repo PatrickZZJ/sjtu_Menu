@@ -21,7 +21,7 @@
 	include('../php/addDish.php');
 ?>
 <!DOCTYPE html>
-
+ 
 
 <html>
     <head>
