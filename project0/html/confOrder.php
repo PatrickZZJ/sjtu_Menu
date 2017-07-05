@@ -24,7 +24,7 @@ include ('../php/confOrder.php');
 		</footer>
 	-->	
 		<section class="ui-container ui-center">
-		<div  class="wrapper">
+		<div class="wrapper" style="width:40%">
 		<div>		
 		<i class="ui-icon-success"></i>
 		订单已提交
