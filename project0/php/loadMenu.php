@@ -37,7 +37,7 @@
 					</div>
 
 					<li>
-					<b>".$dish->Cname."</b>
+					<h2>".$dish->Cname."</h2>
 					<div>
 					<span style='color:red'>￥".$dish->price."</span><span>&nbsp;/&nbsp;份</span>
 					</div>
