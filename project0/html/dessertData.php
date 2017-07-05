@@ -71,8 +71,8 @@ $graph->img->SetMargin(60,30,30,70); //设置图像边距
 $graph->graph_theme = null; //设置主题为null，否则value->Show(); 无效  
    
 $lineplot1=new BarPlot($data1); //创建设置两条曲线对象  
-$lineplot1->value->SetColor("#a0b0c0");
-$lineplot1->SetFillColor("orange");
+$lineplot1->value->SetColor("#000000");
+$lineplot1->SetFillColor("#a0b0c0");
 $lineplot1->SetWidth(0.6);
 $lineplot1->value->Show();
 
