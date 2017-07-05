@@ -30,7 +30,10 @@
 				print("			<li class='ui-border-t'>
 				<ul class='ui-tiled'>
 					<div class='ui-list-thumb'>
-					<span style='background-image:url(".$dish->picture.")'></span>
+					<form action='dishInfo-customer.php' method='get' target='_top'>
+						<input value=' ' type='submit' style='width:60px;height:60px;border:none;background-size:cover;background-image:url(".$dish->picture.")' />
+						<input type='hidden' name='dishId' value='".$dishIdSet."'/>
+					</form>
 					</div>
 
 					<li>
