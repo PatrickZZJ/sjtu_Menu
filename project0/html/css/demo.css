@@ -11,7 +11,7 @@ scroll-wrapper给selectPage-apple.php用，解决IOS的内敛框架fixed时不�
 */
 
 /*select*/
-.menu-class {width:17%; background:linear-gradient(#0086de, #aaebe9); height:100%; font-size:14px; font-family: "微软雅黑";position:fixed;top:45px;left:0;}    
+.menu-class {width:17%; background:linear-gradient(#0096de, #affee9); height:100%; font-size:14px; font-family: "微软雅黑";position:fixed;top:45px;left:0;}    
 .menu-class ul {padding:0px; list-style-type:none;}    
 .menu-class ul li {width:100%; height:50px; line-height:50px; text-align:center;}    
 .menu-class ul li a {text-decoration:none; color:#fff; display:block;}    
