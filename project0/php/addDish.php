@@ -83,8 +83,8 @@
 							$orderDishIdSet=$orderDishId['id'];
 							if($dishIdSet == "{$orderDishIdSet}")
 							{	
-								if(!isset($_SESSION['makeorder']))
-								{
+								//if(!isset($_SESSION['makeorder']))
+								//{
 								$flag="1";
 								$odxp=$orders->xpath('/orders/order[@id="'.$orderIdSet.'"]/dish[@id="'.$orderDishIdSet.'"]');
 								$num=$odxp[0]->num;
@@ -93,9 +93,9 @@
 								$odxp[0]->num=$num;
 								$price = (float)($odxp[0]->price);
 								$total=$price + $total;
-								}
-								else
-									unset($_SESSION['makeorder']);
+								//}
+								//else
+								//	unset($_SESSION['makeorder']);
 							}
 						}
 					}
@@ -120,15 +120,15 @@
 						$num=(int)($num);
 						if($num>0)
 						{
-							if(!isset($_SESSION['makeorder']))
-							{
+							//if(!isset($_SESSION['makeorder']))
+							//{
 							$num--;
 							$price = (float)($odxp[0]->price);
 							$odxp[0]->num=$num;
 							$total=$total - $price;
-							}
-							else
-								unset($_SESSION['makeorder']);
+							//}
+							//else
+							//	unset($_SESSION['makeorder']);
 						}
 					}
 				}
