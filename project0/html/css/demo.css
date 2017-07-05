@@ -5,10 +5,13 @@ menuclass、iframe的定位固定
 
 20170704
 把菜单的iframe移出css 放进了具体文件
+
+20170705
+scroll-wrapper给selectPage-apple.php用，解决IOS的内敛框架fixed时不能滑动的问题
 */
 
 /*select*/
-.menu-class {width:17%; background:#6a7d8f; height:100%; font-size:14px; font-family: "微软雅黑";position:fixed;top:45px;left:0;}    
+.menu-class {width:17%; background:linear-gradient(#0086de, #aaebe9); height:100%; font-size:14px; font-family: "微软雅黑";position:fixed;top:45px;left:0;}    
 .menu-class ul {padding:0px; list-style-type:none;}    
 .menu-class ul li {width:100%; height:50px; line-height:50px; text-align:center;}    
 .menu-class ul li a {text-decoration:none; color:#fff; display:block;}    
@@ -17,9 +20,24 @@ menuclass、iframe的定位固定
 
 /*深蓝色：#6a7d8f*/
 
-/*iframe {position:fixed;width:83%;left:17%;height:100%;top:44px}*/
 
-/*order-check*/
+
+/*iframe {position:fixed;width:83%;left:17%;height:100%;top:44px}
+class="wrapper-iframe"
+style='position:fixed; left:17%;top:45px;width:83%;*/
+.scroll-wrapper {  
+		width:83%;left:17%;height:100%;top:44px;
+		 position: fixed;   
+		 -webkit-overflow-scrolling: touch;  
+		 overflow-y: scroll;  
+        /* 提示: 请在此处加上需要设置的大小(dimensions)或位置(positioning)信息! */  
+    }  
+.scroll-wrapper iframe {  
+        /* 你自己指定的样式 */  
+    }  
+
+	
+	/*order-check*/
 
 /*home*/
  .wrapper {

@@ -33,16 +33,18 @@
 					<span style='background-image:url(".$dish->picture.")'></span>
 					</div>
 
-					<li style='padding:15px 0'>
-					<h4>".$dish->Cname."</h4>
-					<h4>".$dish->price."元</h4>
+					<li>
+					<b>".$dish->Cname."</b>
+					<div>
+					<span style='color:red'>￥".$dish->price."</span><span>&nbsp;/&nbsp;份</span>
+					</div>
 					</li>
 					
 					<li>
 					<form action='selectPage.php' method='get' target='_top'>
 						<input type='hidden' name=".$dishIdSet." value='A'>
 						<input type='hidden' name='dishctg' value='".$ctgid[0]."' />
-						<input type='submit' style='width:30px' value='+'>
+						<input type='submit' style='width:38px' value='+'>
 					</form>
 					<h3>");
 				$orderId=$orders->ordersNum;
@@ -60,7 +62,7 @@
 					<form action='selectPage.php' method='get' target='_top'>
 						<input type='hidden' name=".$dishIdSet." value='D'/>
 						<input type='hidden' name='dishctg' value='".$ctgid[0]."' />
-						<input type='submit' style='width:30px' value='-' />
+						<input type='submit' style='width:38px' value='-' />
 					</form>
 					</li>
 				</ul>");
