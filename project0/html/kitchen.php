@@ -36,16 +36,16 @@
 		<i class="glyphicon glyphicon-chevron-down"></i>
 			</a>
 		<ul class="dropdown-menu">
-	<li><a href="staffInfo.html" target="watch"><span>个人信息</span></a></li>
-	<li><a href="settings.html" target="watch"><span>用户设置</span></a></li>
-	<li><a href="staffLogInPage.php"><span>退出系统</span></a></li>
+	<li><a href="" target="watch"><span>个人信息</span></a></li>
+	<li><a href="" target="watch"><span>用户设置</span></a></li>
+	<li><a href=""><span>退出系统</span></a></li>
 		</ul></li></ul></div></div></nav>
 		<div id="left2">
 	<nav>
 		<ul class="nav">
      <li><a href="handleOrder.php" target="watch"><span>查看订单</span></a></li>
      <li><a href="menu-manager-guide.php" target="watch"><span>处理菜单</span></a></li>
-     <li><a href="allsettings.html" target="watch"><span>系统设置</span></a></li>
+     <li><a href="showData.php" target="watch"><span>数据分析</span></a></li>
      <li><a href="helper.html" target="watch"><span>服务中心</span></a></li>
 		</ul></nav></div>
 			<div id="main">
