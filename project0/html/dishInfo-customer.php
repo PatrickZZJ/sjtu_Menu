@@ -33,7 +33,7 @@
 			 		<i class="ui-icon-return" onclick="history.back()"></i><h1> 商家名称：一起用餐吧 </h1>
                 </header>
 				<div class="ui-footer ui-footer-stable">
-					<a href="#"><button class="ui-btn-lg ui-btn-danger" style="height:100%">
+					<a href="selectPage.php"><button class="ui-btn-lg ui-btn-danger" style="height:100%">
 					确定
 					</button></a>
 				</div>
