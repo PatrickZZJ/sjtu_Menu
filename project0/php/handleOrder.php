@@ -31,7 +31,7 @@ showOrder.php负责打印订单详情框架，其整体为<div class="finishOrde
 <div>
     <form action="handleOrder.php" method="post" >
 		请选择日期
-		<input type="day" name="day" width="300px" value="2017-07-07">
+		<input type="date" name="day" width="300px">
 		<input type="submit" value="确定">
 	</form>
 <form>
