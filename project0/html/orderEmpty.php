@@ -25,6 +25,7 @@
 		<div>		
 		<i class="ui-icon-success"></i>
 		对不起
+		<br />
 		您还未点菜~
 		<br />
 		<br />
