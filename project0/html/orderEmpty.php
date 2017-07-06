@@ -21,10 +21,11 @@
 		</footer>
 	-->	
 		<section class="ui-container ui-center">
-		<div class="wrapper" style="width:40%">
+		<div class="wrapper" style="width:40%;padding-top:40%">
 		<div>		
 		<i class="ui-icon-success"></i>
-		您还未点菜
+		对不起
+		您还未点菜~
 		<br />
 		<br />
 		<button class="ui-btn-lg ui-btn-danger" onclick="location.href='customerLogInPage.php'">返回点菜<h2></button>
