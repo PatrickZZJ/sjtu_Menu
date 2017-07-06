@@ -44,7 +44,7 @@
 	<nav>
 		<ul class="nav">
      <li><a href="handleOrder.php" target="watch"><span>查看订单</span></a></li>
-     <li><a href="menu-manager-guide.php" target="watch"><span>处理菜单</span></a></li>
+     <li><a href="menu-manager-guide.php" target="watch"><span>编辑菜单</span></a></li>
      <li><a href="showData.php" target="watch"><span>数据分析</span></a></li>
      <li><a href="helper.html" target="watch"><span>服务中心</span></a></li>
 		</ul></nav></div>
