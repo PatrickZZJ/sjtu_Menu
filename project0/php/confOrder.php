@@ -21,7 +21,7 @@
 	}
 	if($flag == "0")//判断是否有人已经点单，若有则退出此页面
 	{	
-		header('Location:customerLogInPage.php');
+		header('Location:orderErro.php');
 		unset($_SESSION['desknumber']);
 		exit(0);
 	}
