@@ -83,23 +83,14 @@
 							$orderDishIdSet=$orderDishId['id'];
 							if($dishIdSet == "{$orderDishIdSet}")
 							{	
-								if(!isset($orderId[0]->mo))
-								{
-									$flag="1";
-									$odxp=$orders->xpath('/orders/order[@id="'.$orderIdSet.'"]/dish[@id="'.$orderDishIdSet.'"]');
-									$num=$odxp[0]->num;
-									$num=(int)($num);
-									$num++;
-									$odxp[0]->num=$num;
-									$price = (float)($odxp[0]->price);
-									$total=$price + $total;
-								}
-								else
-								{
-									unset($orderId[0]->mo);
-									$flag="1";
-								}
-								print "1234567890asdfghjkl";
+								$flag="1";
+								$odxp=$orders->xpath('/orders/order[@id="'.$orderIdSet.'"]/dish[@id="'.$orderDishIdSet.'"]');
+								$num=$odxp[0]->num;
+								$num=(int)($num);
+								$num++;
+								$odxp[0]->num=$num;
+								$price = (float)($odxp[0]->price);
+								$total=$price + $total;
 							}
 						}
 					}
@@ -124,15 +115,10 @@
 						$num=(int)($num);
 						if($num>0)
 						{
-							if(!isset($orderId[0]->mo))
-							{
-								$num--;
-								$price = (float)($odxp[0]->price);
-								$odxp[0]->num=$num;
-								$total=$total - $price;
-							}
-							else
-								unset($orderId[0]->mo);
+							$num--;
+							$price = (float)($odxp[0]->price);
+							$odxp[0]->num=$num;
+							$total=$total - $price;
 						}
 					}
 				}

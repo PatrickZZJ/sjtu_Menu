@@ -5,11 +5,11 @@
 	20170703 17:05
 	点击下单后生成order
 */
-
 	session_start();
 	$orders=simplexml_load_file('../xml/addDish.xml');
 	$addOrder=simplexml_load_file('../xml/order.xml');
 	
+	$flag = "0";
 	//删除addDish.php中num=0的dish节点
 	foreach($orders->order as $order)// 得到需要提交order的id
 	{
@@ -17,7 +17,14 @@
 		{
 			$orderIdArr=$order->attributes();
 			$orderId=$orderIdArr['id'];
+			$flag = "1";
 		}
+	}
+	if($flag == "0")//判断是否有人已经点单，若有则退出此页面
+	{
+		header('Location:customerLogInPage.php');
+		unset($_SESSION['desknumber']);
+		exit(0);
 	}
 	$i=0;
 	$j=0;

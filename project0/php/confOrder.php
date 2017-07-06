@@ -9,14 +9,23 @@
 	$orders=simplexml_load_file('../xml/addDish.xml');
 	$addOrder=simplexml_load_file('../xml/order.xml');
 
+	$flag = "0";
 	foreach($orders->order as $order)// 得到需要提交order的id
 	{
 		if($order->desknumber == "{$_SESSION['desknumber']}")
 		{
 			$orderIdArr=$order->attributes();
 			$orderId=$orderIdArr['id'];
+			$flag = "1";
 		}
 	}
+	if($flag == "0")//判断是否有人已经点单，若有则退出此页面
+	{	
+		header('Location:customerLogInPage.php');
+		unset($_SESSION['desknumber']);
+		exit(0);
+	}
+	
 	$orderThis=$orders->xpath('/orders/order[@id="'.$orderId.'"]');
 	$orderThis[0]->handled="no";
 	

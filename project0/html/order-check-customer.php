@@ -56,7 +56,7 @@ foreach($Order as $list){
 	<section class="ui-container" style="background:#efefef">
  <!--      <p style="height: 30px;padding: 10px">桌号:<?php echo $desknumber ?></p>  --> 
 
-		<p style="padding:10px">&nbsp;&nbsp;客户信息</p> 
+		<p style="padding:10px">&nbsp;&nbsp;订单信息</p> 
        <table style="background:white;width:100%;text-align: center">
         <tr>
             <th style="width: 40%;text-align: center;font-family:黑体;padding:5px">菜品</th>
@@ -88,7 +88,7 @@ foreach($Order as $list){
             <td style="color: red">￥<?php echo $Order['0']['total'] ?></td>
         </tr>
 		</table>
-		<p style="padding:10px">&nbsp;&nbsp;订单信息</p>
+		<p style="padding:10px">&nbsp;&nbsp;客户信息</p>
 			   <table style="background:white;width:100%;">
 				<tr>
 					<th style="width: 30%;"></th>
@@ -130,7 +130,7 @@ foreach($Order as $list){
 	</section>
 	<footer  class="ui-footer  ui-footer-btn ui-btn-group" style="position:fixed;background:#DADADA;border: 0">
 			<ul class="ui-tiled ui-border-t">
-				<li><a style="border: 0" class="ui-btn-lg ui-btn-primary" onclick="history.back()"><h2 style="color:white">修改/加菜</h2></a></li>
+				<li><a style="border: 0" class="ui-btn-lg ui-btn-primary" onclick="location.href='selectPage.php'"><h2 style="color:white">修改/加菜</h2></a></li>
 				<li><a style="border: 0" class="ui-btn-lg ui-btn-danger" href="confOrder.php"><h2 style="color:white">提交订单</h2></a></li>
 				</ul>
 		</footer>
