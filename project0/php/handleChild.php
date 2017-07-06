@@ -110,14 +110,14 @@ if($xml=simplexml_load_file('../xml/order.xml')){
 	}
 }
 else{
-	echo('load xml error!');
+	//echo('load xml error!');
 }
 //print unfinished order
 if(isset($Order)&&($_GET['handled']=='no')){
 foreach($Order as $list){
 	$orderID=$list['@attributes']['id'];
 	
-	echo '<iframe src="showOrder.php?orderID='  ,  $orderID  ,  '&handled=yes';
+	echo '<iframe src="showOrder.php?orderID='  ,  $orderID  ,  '&handled=no';
 	echo '" class="showUnfinishOrder"></iframe>';
 	
 	

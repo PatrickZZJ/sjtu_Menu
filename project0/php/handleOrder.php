@@ -27,7 +27,28 @@ showOrder.php负责打印订单详情框架，其整体为<div class="finishOrde
 
 </head>
 
+<body>
+<div>
+    <form action="handleOrder.php" method="post" >
+		请选择日期
+		<input type="day" name="day" width="300px" value="2017-07-07">
+		<input type="submit" value="确定">
+	</form>
+<form>
+</div>
+
 <?php
+error_reporting(0);//错误显示
+
+if(isset($_POST['day'])) $day=$_POST['day'];
+else $day=date('Y-m-d');
+$Ymd = explode('-',$day);
+
+$getDay =$Ymd[2];
+$getMonth=$Ymd[1];
+$getYear =$Ymd[0];
+
+
 //deal with the get information
 if(@$_GET['handled']=='yes'){
 	$xml=simplexml_load_file('../xml/order.xml');
@@ -44,6 +65,10 @@ if(@$_GET['handled']=='no'){
 	$_GET['handled']='0';
 }
 
+
+
+
+
 //print unfinish order
 if($xml=simplexml_load_file('../xml/order.xml')){
 	foreach($xml->Xpath('/orders/order[handled="no"]') as $list){
@@ -51,8 +76,20 @@ if($xml=simplexml_load_file('../xml/order.xml')){
 	}
 }
 else{
-	echo('load xml error!');
+	//echo('load xml error!');
 }
+
+foreach($unfinishOrder as $list){
+	$date = $list['date'];
+	$Ymd = explode('/',$date);
+	$year = $Ymd[0];
+	$month = $Ymd[1];
+	$day = $Ymd[2];
+	if(($year==$getYear)&&($month==$getMonth)&&($day==$getDay)){
+		$matchOrder1[]=$list;
+	    }
+}
+$unfinishOrder=$matchOrder1;
 
 if(isset($unfinishOrder)){
 foreach($unfinishOrder as $list){
@@ -75,6 +112,19 @@ else{
 	echo('load xml error!');
 }
 
+foreach($order as $list){
+	$date = $list['date'];
+	$Ymd = explode('/',$date);
+	$year = $Ymd[0];
+	$month = $Ymd[1];
+	$day = $Ymd[2];
+	if(($year==$getYear)&&($month==$getMonth)&&($day==$getDay)){
+		$matchOrder2[]=$list;
+	    }
+}
+$order=$matchOrder2;
+
+
 if(isset($order)){
 foreach($order as $list){
 	$orderID=$list['@attributes']['id'];
@@ -84,11 +134,8 @@ foreach($order as $list){
 	
 }
 }
-?>
-  
-  
- 
 
 
-
+?> 
+</body>
 </html>

@@ -29,7 +29,7 @@ showOrder.php负责打印订单详情框架，其整体为<div class="finishOrde
 <body>
 
 <?php
-
+error_reporting(0);//错误显示
 
 if($xml=simplexml_load_file('../xml/order.xml')){
 	foreach($xml->Xpath('/orders/order[@id="'.$_GET['orderID'].'"]') as $list){
@@ -39,6 +39,9 @@ if($xml=simplexml_load_file('../xml/order.xml')){
 else{
 	echo('load xml error!');
 }
+
+
+
 //print unfinished order
 if(isset($Order)&&($_GET['handled']=='no')){
 foreach($Order as $list){
@@ -46,8 +49,9 @@ foreach($Order as $list){
 	
 	echo '<div class="unfinishOrder">';
 	
-	echo '<div class="orderHead">订单号：',$orderID,'&nbsp;&nbsp;';
+	echo '<div class="orderHead">订单号：',$orderID;
 	echo '<span style="float:right;">桌号：',$Order['0']['desknumber'],'</span></div><br/>';
+	echo $list['date'] , '<span style="float:right;">' , $list['time'] , '</span><br/>';
 	foreach($xml->Xpath('/orders/order[@id="'.$orderID.'"]/dish') as $list){
 		$dish[$orderID][]=get_object_vars($list);
 	}
@@ -65,8 +69,9 @@ foreach($Order as $list){
 	
 	echo '<div class="finishOrder">';
 	
-	echo '<div class="orderHead">订单号：',$orderID,'&nbsp;&nbsp;';
+	echo '<div class="orderHead">订单号：',$orderID;
 	echo '<span style="float:right;">桌号：',$Order['0']['desknumber'],'</span></div><br/>';
+	echo $list['date'] , '<span style="float:right;">' , $list['time'] , '</span><br/>';
 	foreach($xml->Xpath('/orders/order[@id="'.$orderID.'"]/dish') as $list){
 		$dish[$orderID][]=get_object_vars($list);
 	}
