@@ -93,7 +93,7 @@ v2
 						<br />
 						<label>英文名：</label>&#12288; <input type='text' name='Ename' value='".$dish->Ename."' >
 						<br />
-						<label>价格：</label>&#12288;&#12288; <input type='number' name='price' value='".$dish->price."' >
+						<label>价格：</label>&#12288;&#12288; <input type='number' step=0.01 name='price' value='".$dish->price."' >
 						<br />
 						<label>图片：</label>&#12288;&#12288; <input type='file' name='file'>
 						<input type='hidden' name='MAX_FILE_SIZE' value='500000'>
