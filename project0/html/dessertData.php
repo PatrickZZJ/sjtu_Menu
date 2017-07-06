@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);//错误显示
 
 include("../jpgraph/jpgraph.php");
 include("../jpgraph/jpgraph_bar.php");
