@@ -21,10 +21,11 @@
 		</footer>
 	-->	
 		<section class="ui-container ui-center">
-		<div class="wrapper" style="width:40%">
-		<div>		
-		<i class="ui-icon-success"></i>
-		手慢啦，您的伙伴已买单
+		<div class="wrapper" style="width:40%;padding-top:60%">
+		<div>
+		手慢啦
+		<br />
+		您的同伴已买单
 		<br />
 		<br />
 		<button class="ui-btn-lg ui-btn-danger" onclick="location.href='customerLogInPage.php'">退出<h2></button>
