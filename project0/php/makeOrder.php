@@ -10,6 +10,7 @@
 	$addOrder=simplexml_load_file('../xml/order.xml');
 	
 	$flag = "0";
+	$flagN = "0";
 	//删除addDish.php中num=0的dish节点
 	foreach($orders->order as $order)// 得到需要提交order的id
 	{
@@ -17,7 +18,7 @@
 		{
 			if(!isset($order->dish))
 			{
-				header('Location:selectPage.php');
+				header('Location:orderEmpty.php');
 				exit(0);
 			}
 			$orderIdArr=$order->attributes();
@@ -52,6 +53,11 @@
 					unset($order->dish[$k]);
 					$k--;
 					$p--;
+					if(!isset($order->dish))
+					{
+						header('Location:orderEmpty.php');
+						exit(0);
+					}
 				}
 			}
 		}
