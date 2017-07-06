@@ -61,11 +61,11 @@
 	$title = iconv("UTF-8", "gb2312", $title);
 	$graph->title->SetFont(FF_SIMSUN);
 	$graph->title->Set($title);   //设置图像标题 
-	$x = "天";
+	$x = "日";
 	$x = iconv("UTF-8", "gb2312", $x);
 	$graph->xaxis->title->SetFont(FF_SIMSUN);
 	$graph->xaxis->title->Set($x); //设置x坐标轴名称
-	$y = "额售销";
+	$y = "￥/额售销";
 	$y = iconv("UTF-8", "gb2312", $y);
 	$graph->yaxis->title->SetFont(FF_SIMSUN);
 	$graph->yaxis->title->Set($y);//设置y坐标轴名称
