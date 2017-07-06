@@ -15,6 +15,11 @@
 	{
 		if($order->desknumber == "{$_SESSION['desknumber']}")
 		{
+			if(!isset($order->dish))
+			{
+				header('Location:selectPage.php');
+				exit(0);
+			}
 			$orderIdArr=$order->attributes();
 			$orderId=$orderIdArr['id'];
 			$flag = "1";
