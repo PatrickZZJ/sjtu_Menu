@@ -30,7 +30,7 @@ include ('../php/confOrder.php');
 		订单已提交
 		<br />
 		<br />
-		<button class="ui-btn-lg ui-btn-danger" onclick="location.href=''">完成<h2></button>
+		<button class="ui-btn-lg ui-btn-danger" onclick="location.href='customerLogInPage.php'">完成<h2></button>
 		</div>
 		</div>
 		</section>
