@@ -50,7 +50,15 @@
 						<input type='submit' style='width:38px' value='+'>
 					</form>
 					<h3>");
-				$orderId=$orders->ordersNum;
+				$orderDK=$_SESSION['desknumber'];
+				foreach($orders->order as $list)
+				{
+					if($list->desknumber == $orderDK)
+					{
+						$orderIdArr = $list->attributes();
+						$orderId = $orderIdArr['id'];
+					}
+				}
 				$order=$orders->xpath('/orders/order[@id="'.$orderId.'"]');
 				if(isset($order[0]->dish))
 				{
