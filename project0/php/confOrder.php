@@ -1,10 +1,10 @@
 <?php
+	error_reporting(7);//错误显示
 /*
 	删除临时订单addDish.xml中的order节点
 	20170703 19:28
 	By Moton Shao
 */
-
 	session_start();
 	$orders=simplexml_load_file('../xml/addDish.xml');
 	$addOrder=simplexml_load_file('../xml/order.xml');
@@ -73,6 +73,7 @@
 		if($orderId == "{$oic}")//**经测试必须这么写，否则会无法判断，节点与属性相比较
 		{
 			unset($orders->order[$j]);
+			break;
 		}
 		$j++;
 	}
