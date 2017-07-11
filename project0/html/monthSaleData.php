@@ -34,10 +34,14 @@
 			}
 		}
 	}
+	
+	$monthTotal = 0;
 	foreach($dayTotal as $list)
 	{ //第一条曲线的数组
 		$data1[] = $list;
+		$monthTotal = $monthTotal + $list;//月总销售额
 	}
+	$_SESSION['monthTotal'] = $monthTotal;
 	
 	//生成图像
 	$graph = new Graph(950,550);   
